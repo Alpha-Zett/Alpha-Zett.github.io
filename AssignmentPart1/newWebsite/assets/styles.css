@@ -85,6 +85,7 @@ table, th, td {
 th, td {
   padding: 15px;
   text-align: left;
+  font-size: 25px;
 }
 #t01 tr:nth-child(even) {
   background-color: #eee;
