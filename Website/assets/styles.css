@@ -115,24 +115,31 @@ th, td {
   width: 100%;
   height: auto;
   border: 1px solid #000000;
-  }
+}
   
-  pi {
+pi {
     font-size: 25px;
     font-style: italic;
-  }
+}
 
-  .center-img-no-border {
-    margin-top: 30px; 
-    margin-bottom: 30px; 
-    width: 100%;
-    height: auto;
-    }
+.center-img-no-border {
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  width: 100%;
+  height: auto;
+}
 
-    .center-img-no-border-smaller {
-      float: left;
-      margin-top: 30px; 
-      margin-bottom: 30px; 
-      width: 50%;
-      height: auto;
-      }
+.center-img-no-border-smaller {
+  float: left;
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  width: 50%;
+  height: auto;
+}
+
+.float-img {
+  float: left;
+  width: 10%;
+  height: auto;
+  margin-right: 20px;
+}
