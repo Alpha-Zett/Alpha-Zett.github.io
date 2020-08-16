@@ -156,11 +156,6 @@ COVID-19 Things you should do if you are tested positive. - <a href = "https://w
 <img src="assets/images/dhhsCoronaVirusHTSSQAI.jpg" alt="DHHS Corona Virus Quarantine and Isolation" class="center-img">
 
 </body>
-
-<h2>Features</h2>
-
-<h3>Minimium Viable Feature 1: Interactive Map</h3> 
-<p id="subheading">Description</p>
 <p>
 The Alpha Builders are proposing to make a website that is like a one stop shop for all things COVID-19 which is based on Victorian data.
 </p>
@@ -219,34 +214,67 @@ As a young adult I want to be informed of COVID-19 cases so that if I need to le
 As an administrator I want to add a live update page in order for users to see the daily increase
 </p>
 
+<h2>Features</h2>
+
+<h3>Minimium Viable Feature 1: Interactive Map</h3> 
+<p id="subheading">Description</p>
+<p>
+  There will be a map of Victoria that will have user input where someone can select their postcode and the amounts of COVID-19 with a 5km radius of the inputted postcode will show COVID-19 cases by the use of coloured spheres that pop up in the postcode and surrounding post codes. These spheres will change in intensity and/or size to represent COVID-19 cases in numbers. The higher the number of cases, the larger and denser the sphere around that particular post code.
+  We will gather data from government sources which will be accurate and up to date and research to see if we have the option to feed data directly into the map or if we have to create our own database.
+  The purpose of having the interactive map with COVID-19 cases is so that a user can open the website and quickly get information about COVID that is around them and see it in a graphic form.
+</p>
+<p id="subheading">User Stories</p>
+<p>
+ As a delivery driver,
+<br>I want to know how severe COVID-19 is in the areas that I need to work in,
+<br>so that I can prepare myself to be working safely<br>
+ 
+<br>As a retired woman,
+<br>I want to know how many cases are in my suburb,
+<br>so that I can consider doing my own shopping or getting it done online<br> 
+</p>
+ 
+<br>As a young adult,
+<br>I want to be informed of COVID-19 cases,
+<br>so that if I need to leave my house for essential reasons, I can do so safely<br> 
+</p>
+<p>Resources and Tools</p>
+ 
+<p> 
+ 
+<a href="https://www.abc.net.au/news/2020-07-07/metropolitan-melbourne-suburbs-back-in-coronavirus-lockdown/12431564">ABC News Corona Virus Lock Down</a> 
+ 
+</p>
+ 
+<p> 
+ 
+<a href="https://www.covid19data.com.au/">COVID-19 Data</a> 
+ 
+</p>
+ 
+<p> 
+ 
+ <a href="https://covidvictoria.com/">COVID-19 Victoria</a> 
+ 
+ </p>
+ 
+ <p> 
+ 
+ <a href="https://powerbi.com/">DHSS Interactive Map</a> 
+ 
+ </p>
+ 
+ <p> 
+ 
+ <a href="https://www.dhhs.vic.gov.au/coronavirus">DHSS Corona Virus</a> 
+ 
+ </p>
+ 
 <article>
  <h3>Minimum Viable Feature 2: COVID-19 Cases Presentation</h3>
- <p id="subheading">Heading</p>
- <p>We consider common problems that may be encountered.The main goal of the function is to allow users to more intuitively observe the changes in daily data.This is an extension for our interactive map.</p>
-
  <p id="subheading">Description</p>
  <p>
-   <ul>
-     <li>
-      What is it This feature will be used to present data that cannot be shown on the table. Here, we can show the total number of cases, total number of deaths, amount of people tested, amount of active cases, recoveries etc. This set of data will be updated daily, like our interactive map. We can present this in the form of a graph, or just a table even. <br>
-      Use what-if statements to make judgments and feedback data
-     </li>
-     <li>
-       Steps: <br>
-       1:We set the variables we need through javascript  <br>
-       2:According to the percentage change, we use different colors to indicate different levels <br>
-       3:We will estimate whether the virus will bring more cases and the possible end date based on changes in daily data <br>
-       4:We set up a table and a pie chart, this purpose can intuitively let users understand the degree of harm of the situation, for example, red represents crisis, green represents safety <br>
-       <img src="assets/images/MFV1.PNG" alt="">
-       <img src="assets/images/MFV2.PNG" alt="">
-      </li>
-
-   </ul>
- </p>
-
- <p id="subheading">Purpose</p>
- <p>
-  The purpose is to express that the interactive map cannot represent the information data. We create a pie chart or a data map through different colors to allow users to more intuitively observe information such as changes in the number of infections and deaths in different regions. At the same time, it can give users a trend of virus case changes.
+   A lot of people care about COVID-19 situations in other states of the country and/or other countries. Whether it's their personal interest, or because of their friends and families, this feature can present them with both domestic and international data of COVID-19. The main attributes we plan to present are total number of cases, total number of deaths, total number of recoveries, daily new cases, daily new deaths and infection by population. 
  </p>
  <p id="subheading">User Stories</p>
  <p>
@@ -262,17 +290,6 @@ As an administrator I want to add a live update page in order for users to see t
      </li>
    </ul>
  </p>
- <p id="subheading">Resources and Tools</p>
- <ul>
-   <li>
-     <a href="https://www.dhhs.vic.gov.au/coronavirus-covid-19-daily-update">Coronavirus (COVID-19) daily update</a>
-   </li>
-   <li>
-     Tools: <br>
-     1: In terms of technology, we are using visual studio code to operate. <br>
-     2: In terms of communication, we are using Microsoft team.
-   </li>
- </ul>
 </article>
 
 <section>
@@ -340,38 +357,43 @@ As a full-time student,
 </p>
 </section>
 
-<h3>Extended Feature 1: Personalized Data on RSS Feed</h3>
+<h3>Extended Feature 1:</h3>
 <p>This feature is an extension to the RSS Feed discussed earlier. Its main purpose here is to provide users with the option to show information which are relevant to their area. This feature will be tested for validation by inputting a set of parameters (location or preferred accounts) into the RSS Feed settings and observing if the Feeds outputs the relevant articles.</p>
 
 <table id="t01">
-  <tr>
-    <th style="border:1px solid grey;">Minimum Viable Features (MVF)</th>
-    <th style="border:1px solid grey;">Extended Viable Features (EVF)</th>
-  </tr>
-  <tr>
-    <td class="text" style="border:1px solid grey;">
-      <br>MVF1: Interactive Map
-      <br>We will first add postcode values into the map to see if it displays the name on the correct location. Next, we input test values to see if it displays on the map correctly. 
-      For example: We record 200 cases Melbourne, and the system outputs a large sphere around Melbourne.
-      <br>
-      <br>MVF2: COVID-19 Cases Presentation
-      <br>This feature will be tested by inputting test values to see if it displays correctly on the website.
-      <br>
-      <br>MVF3: Chatbot
-      <br>This feature will be tested by inputting questions and key words and see if the chatbot outputs the expected answers or provides relevant links.
-      <br>
-      <br>MVF 4: Trend Forecast
-      <br>This feature wil be tested by inputting test values to see if the system outputs the expected outcomes. For example: We input total case reduction by 50% and see half of the cases on the map gone.
-      <br>
-      <br>MVF 5: RSS Feed
-      <br>This feature will be tested by observing whether it shows articles from the expected sources and see if the feed updates minutes after the article being posted.
-    </td>
-    <td class="text" style="border:1px solid grey;">
-      EVF1: Personalized Data on RSS Feed
-      <br>This feature will be tested by inputting a set of parameters (location or preferred accounts) into the RSS Feed settings and observing if the Feeds outputs the relevant articles.
-    </td>
-  </tr>
-  </table>
+<tr>
+  <th style="border:1px solid grey;">Minimum Viable Features (MVF)</th>
+  <th style="border:1px solid grey;">Extended Viable Features (EVF)</th>
+</tr>
+<tr>
+  <td class="text" style="border:1px solid grey;">
+    <br>MVF1: Interactive Map
+    <br>[Description of validation test]
+    <br>
+    <br>MVF2: COVID-19 Cases Presentation
+    <br>[Description of validation test]
+    <br>
+    <br>MVF3: Chatbot
+    <br>[Description of validation test]
+    <br>
+    <br>MVF 4: Trend Forecast
+    <br>[Description of validation test]
+    <br>
+    <br>MVF 5: RSS Feed
+    <br>[Description of validation test]
+  </td>
+  <td class="text" style="border:1px solid grey;">
+    EVF1: 
+    <br>[Description of validation test]
+    <br>
+    <br>EVF2:
+    <br>[Description of validation test]
+    <br>
+    <br>EVF.3
+    <br>[Description of validation test]
+  </td>
+</tr>
+</table>
 <br>
 
 <!--Project Motivation-->
@@ -716,269 +738,6 @@ The idea of this website is driven by the negative impact of COVID-19 on Victori
     <td></td>
   </tr>
 </table>
-
-
- <table border="1" style="width:100%">
-    <tr>
-      <th>Name</th>
-      <th>Task</th>
-      <th>Time costs</th>
-      <th>Week</th>
-      <th>completion</th>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Come up with team name<br>
-      <td>1 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Come up with the project<br>
-      <td>1 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Apply for approval of our project<br>
-      <td>0.5 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Polish our project according to the feedback<br>
-      <td>0.5 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>start developing MVF 2<br>
-      <td>1 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>start developing Website Design: Section E<br>
-      <td>1 hours</td>
-      <td>Week3</td>
-      <td></td>
-    </tr>
-   
-   
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Develop and write documentation for MVF 2<br>
-      <td>2 hours</td>
-      <td>Week4</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Develop and write documentation for Website Design: Section E<br>
-      <td>2 hours</td>
-      <td>Week4</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Test for MVF2 and Section E<br>
-      <td>1 hours</td>
-      <td>Week4</td>
-      <td></td>
-    </tr>
-    
-    
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Submit final work to github and AWS for MVF 2<br>
-      <td>2 hours</td>
-      <td>Week5</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Submit final work to github and AWS for Website Design: Section E<br>
-      <td>2 hours</td>
-      <td>Week5</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Huiyu Wang </td>
-      <td>Polish my code and CSS for MVF2 and Section E<br>
-      <td>1 hours</td>
-      <td>Week5</td>
-      <td></td>
-    </tr>
-   
-   
-    <tr>
-        <td>Huiyu Wang </td>
-        <td>Start coding for MVF3<br>
-        <td>2 hours</td>
-        <td>Week6</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>UCD for MVF3<br>
-        <td>2 hours</td>
-        <td>Week6</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Code for EVF<br>
-        <td>1 hours</td>
-        <td>Week6</td>
-        <td></td>
-      </tr>
-
-
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Solidify mock-up<br>
-        <td>1 hours</td>
-        <td>Week7</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Testing for MVF2<br>
-        <td>2 hours</td>
-        <td>Week7</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Start design documentation for MVF2<br>
-        <td>2 hours</td>
-        <td>Week7</td>
-        <td></td>
-      </tr>
-      
-
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Prepare prototype for user testing for MVF4<br>
-        <td>1 hours</td>
-        <td>Week8</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Prepare prototype for user testing for MVF1<br>
-        <td>2 hours</td>
-        <td>Week8</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Design documentation for MVF4<br>
-        <td>2 hours</td>
-        <td>Week8</td>
-        <td></td>
-      </tr>
-
-
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>User testing for main page<br>
-        <td>2 hours</td>
-        <td>Week9</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>User testing for EVF3<br>
-        <td>2 hours</td>
-        <td>Week9</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Start developing new product<br>
-        <td>1 hours</td>
-        <td>Week9</td>
-        <td></td>
-      </tr>
-
-
-      
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Estimation plan for MVF2<br>
-        <td>2 hours</td>
-        <td>Week10</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Professionalism include HTML, Figures and Media<br>
-        <td>2 hours</td>
-        <td>Week10</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>English Expression<br>
-        <td>1 hours</td>
-        <td>Week10</td>
-        <td></td>
-      </tr>
-
-
-            
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Project challenges and learning<br>
-        <td>2 hours</td>
-        <td>Week11</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Professionalism include HTML, Figures and Media<br>
-        <td>2 hours</td>
-        <td>Week11</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Professionalism for bullet or numbered points and appendix and references<br>
-        <td>1 hours</td>
-        <td>Week11</td>
-        <td></td>
-      </tr>
-
-
-                  
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Final rehearsals for presentation<br>
-        <td>2 hours</td>
-        <td>Week12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Five MVFs properly described and demonstrated<br>
-        <td>2 hours</td>
-        <td>Week12</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>Huiyu Wang </td>
-        <td>Quality of delivery and mock up 3 minutes presentation<br>
-        <td>1 hours</td>
-        <td>Week12</td>
-        <td></td>
-      </tr>
-  </table>
 
 <p id="subheading">Beyond Current Capabilities</p>
 <p>The development of a COVID-19 Tracker Website involves implementing intermediate to advanced HTML, CSS and JavaScript skills and creating a functional database. This project will a challenge for many of us to accomplish, as most members are first-year Information Technology (IT) students. Ultimately, the team will expand on their programming skills, website programming skills and design and knowledge of database by participating and fulfilling the scope of the project.</p>
