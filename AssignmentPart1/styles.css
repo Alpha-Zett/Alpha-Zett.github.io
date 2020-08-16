@@ -31,6 +31,14 @@ p {
   font-size: 20px;
 }
 
+pi {
+  font-size: 20px;
+  font-style: italic;
+}
+
+ul {
+  font-size: 20px;
+}
 
 /* Navigation Bar */
 .topnav {
@@ -60,9 +68,83 @@ p {
 
 /* Image */
 
-img {
-  float: center;
-  height: 200px;
-  width: 200px;
+
+
+.float-im {
+
+float: center;
+clear: center;
+width: 300px;
+height: 176px;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+
 }
 
+.float-img {
+
+  float: left;
+  width: 10%;
+  margin-right: 20px;
+ 
+  
+  }
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 40%;
+  padding: 10px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.floatleft-img {
+
+float: left;
+
+}
+
+
+.center-img {
+
+display: block;
+margin-top: 30px; 
+margin-bottom: 30px; 
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+border: 1px solid #000000;
+
+
+}
+
+.center-img-no-border {
+
+  
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  width: 100%;
+  
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  
+  padding: 10px;
+}
+
+.grid-container > div {
+  
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
