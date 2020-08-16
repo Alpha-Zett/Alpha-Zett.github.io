@@ -128,3 +128,11 @@ th, td {
     width: 100%;
     height: auto;
     }
+
+    .center-img-no-border-smaller {
+      float: left;
+      margin-top: 30px; 
+      margin-bottom: 30px; 
+      width: 50%;
+      height: auto;
+      }
