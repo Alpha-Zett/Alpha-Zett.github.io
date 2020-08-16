@@ -96,3 +96,35 @@ th, td {
   background-color: #269fcc;
   color: white;
 }
+
+/* Matts Additions */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+}
+
+.center-img {
+  display: block;
+  margin-top: 30px; 
+  margin-bottom: 30px; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000000;
+  }
+  
+  pi {
+    font-size: 25px;
+    font-style: italic;
+  }
+
+  .center-img-no-border {
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    width: 100%;
+    height: auto;
+    }
