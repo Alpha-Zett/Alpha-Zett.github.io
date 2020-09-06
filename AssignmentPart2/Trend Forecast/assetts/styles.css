@@ -1,0 +1,23 @@
+body {
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+h2, h3{
+  padding-left: 40px;
+  font-family: 'Nunito', sans-serif; 
+}
+
+.bg-dark {
+  background-color: #111c27 !important;
+}
+
+
+
+#Layer_1 {
+  width: 200px;
+  padding-left: 20px;
+}
+
+
+
