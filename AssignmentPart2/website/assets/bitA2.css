@@ -67,27 +67,37 @@ h1 {
     font-size:35px;
 }
 
+h2 {
+    text-align:left;
+    font-size:25px;
+}
+
 table {
     width:100%;
-  }
-  table, th, td {
+}
+
+table, th, td {
     border: 1px solid black;
-  }
-  th, td {
+}
+
+th, td {
     padding: 15px;
     text-align: left;
     font-size: 25px;
-  }
-  #t01 tr:nth-child(even) {
+}
+
+#t01 tr:nth-child(even) {
     background-color: #eee;
-  }
-  #t01 tr:nth-child(odd) {
-   background-color: #fff;
-  }
-  #t01 th {
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
     background-color: #70DBF3;
     color: black;
-  }
+}
 
 #footer {
     height:300px;
