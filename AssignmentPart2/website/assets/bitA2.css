@@ -69,6 +69,12 @@ h1 {
 
 h2 {
     text-align:left;
+    font-size:30px;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align:left;
     font-size:25px;
 }
 
