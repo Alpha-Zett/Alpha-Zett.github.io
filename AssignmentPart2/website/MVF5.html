@@ -1,70 +1,107 @@
 <!DOCTYPE html>
 <html>
-    <main>
-        <head>
-            <link rel = "stylesheet" type = "text/css" href = "assets/bitA2.css">
-            <nav id = "topnav">
-                <a href = "bitA2index.html">Plan</a>
-                <a href = "MVF1.html">MVF1</a>
-                <a href = "MVF2.html">MVF2</a>
-                <a href = "MVF3.html">MVF3</a>
-                <a href = "MVF4.html">MVF4</a>
-                <a id = "active" href = "MVF5.html">MVF5</a>
-            </nav>
-            <header id = "header"><b>Minimum Viable Feature 5</b></header>
-            <header id = "header"><b>RSS Feeds</b></header>
-            <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "500" height = "400">
-        </head>
-        <body>
-            <section id = "content">
-                <h1 id = "h1">Description</h1>
-                The RSS Feed will provide real-time information about COVID-19 in Victoria. There will be two feeds: The twitter feed will present tweets from accounts such as VicGovDHHS, COVID-19 Australia, Victorian Government and COVID-19 Victoria. The other feed will present updates from Official Government Websites such as 
-                <a href="https://www.dhhs.vic.gov.au/">DHHS Victoria</a>, 
-                <a href="https://www.covid19data.com.au/">covid19data</a> and 
-                <a href="https://www.health.nsw.gov.au/Pages/default.aspx">NSW Health Australia.</a>
-                <br> Our group decided to implement this feature we believe it is important to keep Victorians with the right information at the right time. With many media platforms providing news about COVID-19, we wanted to simplify it by providing a single platform where they can view all real-time updates about COVID-19. This feature will be tested for validation by observing whether it shows articles from the expected sources and see if the feed updates minutes after the article being posted.
-                <h1 id = "h1">User Stories</h1>
-                <ul>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <h1 id = "h1">Context Diagram</h1>
-                <h1 id = "h1">Validation</h1>
-                <table id = "t01">
-                    <tr>
-                        <th style="border:1px solid grey">Input</th>
-                        <th style="border:1px solid grey">Expected Output</th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </section>
-        </body>
-        <footer>
-            <footer id = "footer">
-                <footerleft id = "footer-left">
-                    @ 2020
-                    <br> Assignment Part 2
-                    <br> Team Name: Alpha Builders
-                    <br> Project Name: VICOVID19 Data
-                </footerleft>
-                <footerright id = "footer-right">
-                    Team: 
-                    <br> Ramon Aguila s3840883
-                    <br> Yuxiang Bai s3776877
-                    <br> Qiwen Dun s3789330
-                    <br> Matthew Howatson s3835344
-                    <br> Huiyu Wang s3737937
-                    <br> Lunke Zhu s3816935
-                </footerright>
-            </footer>
-        </footer>
-    </main>
-    
+<main>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <nav id="topnav">
+      <a href="bitA2index.html">Plan</a>
+      <a href="MVF1.html">MVF1</a>
+      <a href="MVF2.html">MVF2</a>
+      <a href="MVF3.html">MVF3</a>
+      <a href="MVF4.html">MVF4</a>
+      <a id="active" href="MVF5.html">MVF5</a>
+    </nav>
+    <header id="header"><b>Minimum Viable Feature 5</b></header>
+    <header id="header"><b>RSS Feeds</b></header>
+    <img src="assets/vicovid19data.png" alt="vicovid19data" width="500" height="400">
+  </head>
+
+  <body>
+    <section id="content">
+      <h1 id="h1">Description</h1>
+      The RSS Feed is a feed which will provide real-time updates about COVID-19 Victoria. There will be two feeds: A
+      twitter feed which presents tweets from accounts like VicGovDHHS, COVID-19 Australia and COVID-19 Victoria; and
+      another feed presenting articles from Official Government Websites such as DHHS Victoria.
+      <br>
+      We decided to implement this feature was we want to relay the important information to Victorians, at the right
+      time. With several media platforms reporting updates about COVID-19, we wanted to help Victorians by creating a
+      single platform where they can view daily updates about COVID-19 in Victoria.
+      <br>
+      Our group chose to create RSS Feeds to present daily updates because the feature can be automated and presented in
+      a way which is easy to read and navigate. Alternative designs include News Wall, Carousel and List. The RSS Feed
+      was chosen over these alternatives because: the news wall occupies too much space; the list lacks visuals and the
+      carousel focus on one article at a time.
+
+      <h1>How does it work?</h1>
+      The website will have a dedicated page for the two feeds. It will be presented as a vertical feed divided into
+      assorted cards for each article. The Feeds will be created with RSS.app, a third-party application which is used
+      to create RSS Feeds that presents articles from Twitter accounts or websites.
+
+      <h1>Prototype</h1>
+      <img src="assets/images/Feed_Prototype.png" alt="RSS Feed Prototype">
+
+      <h1 id="h1">User Stories</h1>
+      <ul class="mvf3-5">
+        <li>
+          As a parent,
+          <br>I want to see daily updates about COVID-19 in Victoria,
+          <br>So I can stay informed about what is happening around me.
+        </li>
+        <li>
+          <br>As a student,
+          <br>I want to see tips for maintaining wellbeing during lockdown,
+          <br>So I can stay healthy and positive throughout this difficult time.
+        </li>
+        <li>
+          <br>As a business owner,
+          <br>I want to see daily updates about COVID-19,
+          <br>So I can forecast my business operations based on what is happening.
+        </li>
+        <li>
+          <br>As citizen,
+          <br>I want to see daily news about COVID-19,
+          <br>So I know when the lockdown might start easing up.
+        </li>
+        <li>
+          <br>As a student,
+          <br>I want to know what the current situation is with COVID-19,
+          <br>So I know where I should look for part-time jobs.
+        </li>
+        <li>
+          <br>As a student,
+          <br>I want to know what the current restrictions are,
+          <br>So I can prepare for changes in my studies.
+        </li>
+      </ul>
+
+      <h1 id="h1">Context Diagram</h1>
+      <img id="mvf5" src="assets/images/Feed_SCD.png" alt="RSS Feed System Context Diagram">
+
+      <h1 id="h1">Validation</h1>
+      This feature will be tested for validation by observing if the feeds output the relevant articles in chronological order, and updates in real-time. This will allow us to see if the RSS Feed updates in real time and is ordered from newest to older posts.
+
+    </section>
+  </body>
+  <footer>
+    <footer id="footer">
+      <footerleft id="footer-left">
+        @ 2020
+        <br> Assignment Part 2
+        <br> Team Name: Alpha Builders
+        <br> Project Name: VICOVID19 Data
+      </footerleft>
+      <footerright id="footer-right">
+        Team:
+        <br> Ramon Aguila s3840883
+        <br> Yuxiang Bai s3776877
+        <br> Qiwen Dun s3789330
+        <br> Matthew Howatson s3835344
+        <br> Huiyu Wang s3737937
+        <br> Lunke Zhu s3816935
+      </footerright>
+    </footer>
+  </footer>
+</main>
+
 </html>
