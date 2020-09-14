@@ -1,0 +1,165 @@
+body {
+    background-color:#FFFFFF; 
+    text-align: center;
+}
+
+main {
+    background: rgb(255, 255, 255); 
+    box-shadow: 0 0 20px rgb(65,25,25);
+    line-height: 1.5;
+    color: black;
+    max-width: 1500px; 
+    margin: 0 auto; 
+}
+
+#topnav {
+    position: relative;
+    background: #777777;
+    overflow: hidden;
+}
+
+#topnav a {
+    float: left; 
+    color: white; 
+    text-align: center;
+    padding: 20px 20px; 
+    text-decoration: none;
+    font-size: 30px; 
+}
+
+#topnav a:hover {
+    background-color: #666666; 
+    color: aqua;
+}
+
+#topnav a:active {
+    background-color: #555555; 
+    color: aqua;
+}
+
+#header {
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: cursive;
+    margin-bottom: 5px;
+    background: #FFFFFF;
+}
+
+#header2 {
+    margin-bottom:50px;
+    font-size:30px;
+    text-align:left;
+}
+
+#content {
+    text-align:left;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size: 25px;
+    height:auto;
+    background: #FFFFFF; 
+}
+
+h1 {
+    text-align:left;
+    font-size:35px;
+}
+
+h2 {
+    text-align:left;
+    font-size:30px;
+    text-decoration: underline;
+}
+
+h3 {
+    text-align:left;
+    font-size:25px;
+}
+
+table {
+    width:100%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 25px;
+}
+
+#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+#t01 th {
+    background-color: #70DBF3;
+    color: black;
+}
+
+#footer {
+    height:300px;
+    background: #777777;
+}
+
+#footer-left {
+    float:left;
+    text-align:left;
+    margin-left:200px;
+    margin-top:50px;
+    font-size:20px;
+    color:white;
+}
+
+#footer-right {
+    float:right;
+    text-align:left;
+    margin-right:400px;
+    margin-top:50px;
+    font-size:20px;
+    color:white;
+}
+
+#img {
+    text-align:centert;
+    margin-left:200px;
+    margin-right:200px;
+    margin-top:50px;
+    margin-bottom:50px;
+    font-size: 25px;
+    height:1050px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F37070; 
+}
+
+#img-left {
+    float:left;
+}
+
+#img-center {
+    float:left;
+    padding-left:100px;
+}
+
+#img-right {
+    float:left;
+    padding-left:100px;
+}
+
+#form {
+    float:center;
+    margin-left:200px;
+    text-align:left;
+    font-size:30px;
+    margin-bottom:50px;
+}
+
+
