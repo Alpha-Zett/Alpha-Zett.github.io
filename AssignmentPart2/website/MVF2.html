@@ -12,21 +12,32 @@
                 <a href = "MVF5.html">MVF5</a>
             </nav>
             <header id = "header"><b>Minimum Viable Feature 2</b></header>
-            <header id = "header"><b>COVID-19 Cases Presentation</b></header>
+            <header id = "header"><b>Contact Tracing</b></header>
             <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "500" height = "400">
         </head>
         <body>
             <section id = "content">
                 <h1 id = "h1">Description</h1>
-                This feature is used to display the real-time dynamics of covid-19 in Australia and other countries in the world. It will display six types of data: cumulative confirmed cases, cumulative cured cases, cumulative deaths, current confirmed cases, current cured cases, and current deaths.
-                <br><br>
-                Users can learn more about COVID-19 through this feature, whether for personal interests or because of their friends and family,
+                <p>
+                    Although the Interactive Map can display infection rate in different places, Contact Tracing allows users to discover the risk levels of people around them. 
+                </p>
+                <p>
+                    First of all, users need to register and fill out information such as whether they are infected or not, whether they’ve been to a high infection area etc. 
+                </p>
+                <p>
+                    Once they’ve filled out their information, the system will give them a colour code (there are 3 types: red, yellow and green) which would define their risk level. For example, if a person is tested positive, his/her code would be red, if a person hasn’t tested positive but had been to a high risk area and is possible to be diagnosed then he/she gets a yellow code, and if a person is in low risk of being infected then he/she gets a green code. 
+                </p>
+                <p>
+                    The system can track the users as they go around in public and they will be displayed with a colour dot with the same colour as their codes on the map. Therefore, they can see other people’s colours on the map to judge whether they are around safe people or not. 
+                </p>
+                <p>
+                    The system can also get a record of the people that the user had gotten close contact with. If one of the people they got in contact with got tested positive within a few days, the user will be warned by the system that they have a chance to be infected as well and the user can be alerted to take some actions about it such as quarantining or get tested. 
+                </p>
                 <h1 id = "h1">User Stories</h1>
-                <li> As a person interested in covid, I want to know how many people are currently diagnosed in Australia, so I logged in to MVF2 and checked the current confirmed cases.</li>
-                <li> As a tourist who wants to travel to Japan, I want to know the covid status in Japan, so I went to the MVF2 page to check the current covid data in Japan.</li>
+                <ul>
+                    <li>As a citizen going shopping on a public transport, I want to know the levels of risk of other people on the same public transport. </li>
+                    <li>As an essential worker, I want to know what type of people I got in contact with when outdoors. </li>
                 </ul>
-                <h1 id = "h1">Context Diagram</h1>
-                <img src="assets/Context diagram of MVF2.png" alt="MVF2FlowChart" width ="1200" height ="1200"> 
                 <h1 id = "h1">Validation</h1>
                 <table id = "t01">
                     <tr>
