@@ -4,8 +4,7 @@
         <head>
             <link rel = "stylesheet" type = "text/css" href = "assets/bitA2.css">
             <nav id = "topnav">
-                <a href = "Home.html">Home</a>
-                <a href = "Plan.html">Plan</a>
+                <a href = "bitA2index.html">Plan</a>
                 <a href = "MVF1.html">MVF1</a>
                 <a href = "MVF2.html">MVF2</a>
                 <a href = "MVF3.html">MVF3</a>
@@ -16,13 +15,33 @@
                 <a id = "active" href = "EVF3.html">EVF3</a>
             </nav>
             <header id = "header"><b>Extended Viable Feature 3</b></header>
-            <header id = "header"><b></b></header>
+            <header id = "header"><b>Testing facility locations</b></header>
             <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "500" height = "400">
         </head>
         <body>
             <section id = "content">
                 <h1 id = "h1">Description</h1>
+                <p>
+                    This part is an additional feature of the interactive map, allowing users to find the location of the covid-19 test in Victoria.
+                    <br>
+                    Regarding location and working hours data, we grabbed them from the official Victoria website. Regarding the production method, first download the data to the local directory, then use Microsoft excel to organize and export the csv format, then use a third-party software ( batchgeo) to generate a map, and finally embed the generated map link into mvf1
+                    <br>
+                    When the user uses this function, if the user wants to find the test location closest to them, they only need to find the test location closest to them through the map, and then click the mark in the map. After that, detailed information about the place, such as address and business hours, will be displayed above the marker on the map.
+                </p>
+                <h1 id = "h1">User stories</h1>
+                <p>
+                If I feel unwell, I can open the map and select the test location closest to me
+                </p>
+                <p>
+                If I am a person preparing to go abroad, I need to find a test site for covid-19 testing
+                </p>
+                <h1 id = "h1">Testing Facility Location</h1>
+                <p>This is our extended function design. The basic operation mode is similar to mvf1 interactive map.We grabbed information about the test location and business hours from the official Victoria website.We organize these data into csv files and then import them to third-party websites to generate charts. We also add text descriptions below the charts to facilitate users to observe the data more intuitively</p>
+                <img src="assets/ef3.png" alt="chart" width="1000" height="600">
                 <h1 id = "h1">Validation</h1>
+                <p>
+                The verification method of the map is: whether the map can be opened and run normally, whether it can be viewed according to the information, whether it is possible to switch the display data and display the type by color, so that if an error occurs, the verification fails
+                </p>
                 <table id = "t01">
                     <tr>
                         <th style="border:1px solid grey">Input</th>
