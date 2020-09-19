@@ -4,8 +4,7 @@
         <head>
             <link rel = "stylesheet" type = "text/css" href = "assets/bitA2.css">
             <nav id = "topnav">
-                <a href = "Home.html">Home</a>
-                <a href = "Plan.html">Plan</a>
+                <a href = "bitA2index.html">Plan</a>
                 <a id = "active" href = "MVF1.html">MVF1</a>
                 <a href = "MVF2.html">MVF2</a>
                 <a href = "MVF3.html">MVF3</a>
@@ -33,6 +32,7 @@
                 <br>
                 Evf3 part (Testing Facility Locations): <br>
                 The reason for establishing this feature is to bring better interactive experience to users. First, set the address of each testing facility as a primariy key, then upload the csv file to the third-party map generation page (BatchGeo) . In this feature, the user can click on each mark to find the test location. 
+                    More details: <a href="EVF3.html">Testing facility locations</a>
                 </p>
                 <h1 id = "h1">User Stories</h1>
                 <ul>
@@ -54,9 +54,7 @@
                         We have also created a display related data function and a switching function. The lower left corner of this chart is used to switch data display. The data display function is that when the user clicks on the mark in the chart, the corresponding data will be displayed on the top
                     </p>
                 <img src="assets/map1.jpg" alt="Map" width="800" height="600">
-                <h1 id = "h1">Testing Facility Location</h1>
-                <p>This is our extended function design. The basic operation mode is similar to mvf1 interactive map.We grabbed information about the test location and business hours from the official Victoria website.We organize these data into csv files and then import them to third-party websites to generate charts. We also add text descriptions below the charts to facilitate users to observe the data more intuitively</p>
-                <img src="assets/ef3.png" alt="chart" width="1000" height="600">
+                
                 
                 <h1 id = "h1">Use chart to represent data</h1>
                 <p>
@@ -83,9 +81,9 @@
                 <p>Database</p>
                 <img src="assets/xampp.png" alt="chart" width="1000" height="600">
                 <h1 id = "h1">Validation</h1>
-                <p>If the data of the current area can be displayed after clicking the marker in the map, it means the operation is normal</p>
-                
-               
+                <p>The verification method for the map is whether the map can be opened and operating normally, whether it can be clicked to view the information, whether the display data can be switched, and whether the color level is correctly divided</p>
+                <p>The method of database verification is: whether the data stored in the database can be displayed normally, if the stored information cannot be displayed normally on the webpage during the test, it means there is an error. The second point is whether you can use the registration and login functions. In other words, if the test fails to add the registration information to the database or fails to log in, it means there is an error</p>
+                <p>The verification method of the histogram is: if the map cannot be displayed dynamically, it means there is an error.</p>
            
             </section>
         </body>
