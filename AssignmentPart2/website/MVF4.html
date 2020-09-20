@@ -22,30 +22,32 @@
         <body>
             <section id = "content">
                 <h1 id = "h1">Description</h1>
-                A lot of people feel like COVID-19 is an endless rabbit hole. No one knows when it will end, and some people do not always trust the governments’ actions. Experts also need certain ways to predict the best measurements that the government can implement.
-                <br> COVID-19 Trends allows the users to choose different measurements/no actions at all etc to see how the pandemic will last and how effective certain measurements can be. Users can also choose if a certain area has reduced a certain percentage (25%, 50% or 75%) of infected cases, how things will turn out. Thus, citizens would gain more trust with government actions and experts can also use this as a consideration when recommending government what actions to take.
-                <br> For now, we decide to make the estimations based on the R0, population density and effectiveness of the measurements. R0 means patient zero, and it leads to a certain infection chain, for example, if R0 can infect 3 people based on high population density, every patient they infect can pass on the transmission onto another 3 patients. Let’s say if the government implements a lockdown, population density will be reduced, and the infection rate can be reduced let’s say from 3 down to 1 then the outcome will be totally different. These are just some basic ideas. Our algorithm can change as we implement the system.
+                <p>
+                    COVID-19 Trend can predict the pandemic for the future based on user inputs. Users can therefore get a better understanding of why restrictions work and be more hopeful in the future. Based on research, one of the main factors that affect future pandemic is the R0, which is the definition of how many cases in average can be infected by that one single case. Upon that, R0 can be affected by lots of different factors. For example, implementing restrictions can lower population density and therefore lower the transmission(R0). Thus, users can choose the following options to predict future COVID-19: 
+                </p>
+                <ul>
+                    <li>
+                        Location: Users can choose different states/cities in Australia to predict the future pandemic. Different states/cities have different populations. 
+                    </li>
+                    <li>
+                        Restrictions: We currently plan to implement 4 options in Measurements: none, mandatory face masks, social distancing and lockdown. Each option can lower the R0 except for “none” and users can choose multiple measurements as well. The actual % that the measurements can lower is still not confirmed yet. 
+                    </li>
+                    <li>
+                        Date: Different dates have different number of cases, so this will affect the outcomes of predictions as well. Plus, COVID-19 has an incubation period of up to 14 days, so our algorithm will take that into consideration as well. 
+                    </li>
+                </ul>
                 <h1 id = "h1">User Stories</h1>
                 <ul>
-                    <li> As a university student who is depressed about the current COVID-19 situation, I want to see predictions for the future based on the current restrictions.</li>
-                    <li> As a health expert working in the Australian Department of Health, I want to give advices to the Australian government of what actions to take based on the current situation of COVID-19.</li>
+                    <li> As a university student who is depressed about the current COVID-19 situation, I want to see predictions for the future based on the current restrictions, so that I can make plans and be more confident in the future. </li>
+                    <li> As a health expert working in the Australian Department of Health, I want to give advices to the Australian government of what actions to take based on the current situation of COVID-19, so that our country can flatten the curve and beat the virus. </li>
                 </ul>
-                <h1 id = "h1">Context Diagram</h1>
+                <h1 id = "h1">Design</h1>
+                <a href = "CVTrend.html">MVF4 Design</a>
+                The link above is the design of MVF4 and will eventually become the final submission for Assignment Part 3. All that is left is the prediction part at the bottom as we will need to figure out an algorithm ourselves and produce a reasonable outcome. 
                 <h1 id = "h1">Validation</h1>
-                <table id = "t01">
-                    <tr>
-                        <th style="border:1px solid grey">Input</th>
-                        <th style="border:1px solid grey">Expected Output</th>
-                    </tr>
-                    <tr>
-                        <td>Restrictions: </td>
-                        <td>Reduced by: </td>
-                    </tr>
-                    <tr>
-                        <td>Restrictions: </td>
-                        <td>Reduced by: </td>
-                    </tr>
-                </table>
+                <p>
+                    This feature will be tested based on whether the generated outcome is the same as the expected outcome. After we come up with the algorithm we will calculate the outputs manually based on the inputs and then run the system to see if it generates the same output. 
+                </p>
             </section>
         </body>
         <footer>
