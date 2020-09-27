@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <link rel = "stylesheet" type = "text/css" href = "assets/bitA3.css">
+            <nav id = "topnav">
+                <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "150" height = "120">
+                <a href = "Home.html">HOME</a>
+                <a href = "Map.html">MAP</a>
+                <a href = "Contact.html">CONTACT TRACING</a>
+                <a id = "active" href = "Trend.html">TREND FORECAST</a>
+            </nav>
+            <img src = "assets/COVID19future.jpg" alt = "covidfuture" width = "1500">
+            <br><ref id = "reference">
+                <a href = "https://www.google.com/search?q=future+of+covid+19&sxsrf=ALeKk01cRii7JDgk0lSS_D1f-8j7RKRueg:1601035086770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjNrvq8oITsAhXRzTgGHV_2CBYQ_AUoAnoECAwQBA&biw=1536&bih=706#imgrc=nt1hT16xSZDpsM">Image Source</a>
+            </ref>
+            <br><header id = "header"><b>COVID-19 Trend Forecast</b></header>
+        </head>
+        <body>
+            <section id = "content">
+                For more details about this feature and its calculations please click <a href = "TrendDes.html">Here</a>
+            </section>
+            <script type = "text/javascript">
+                function dCheck(value){
+                    document.getElementById("dError").innerHTML=value;
+                }
+                function oCheck(value){
+                    document.getElementById("oError").innerHTML=value;
+                }
+            </script>
+            <section id = "form-trend">
+                <h1 id = "h1">Make Your Predictions</h1>
+                <form name = "predictionForm">
+                    <label for = "location">Location (required): </label>
+                    <br><select style = "font-size: 25px" id = "location" name = "location">
+                        <option value = "vic">Victoria</option>
+                        <option value = "nsw">New South Wales</option>
+                        <option value = "wa">Western Australia</option>
+                        <option value = "sa">South Australia</option>
+                        <option value = "qld">Queensland</option>
+                        <option value = "Tas">Tasmania</option>
+                        <option value = "nt">Northern Territory</option>
+                    </select>
+                    <br>
+                    <br><label for = "date">Date To Begin With (required): </label>
+                    <br><input style = "font-size: 25px" type = "date" id = "date" name = "date">
+                    <br>
+                    <br><label for = "restrictions">Restrictions (required): </label>
+                    <br><input type = "checkbox" id = "mask" name = "mask" value = "Mask">
+                    <label style = "font-size: 25px" for = "mask">Mandatory Masks in public</label>
+                    <br><input type = "checkbox" id = "distance" name = "distance" value = "SocialDistance">
+                    <label style = "font-size: 25px" for = "distance">Social Distancing in public</label>
+                    <br><input type = "checkbox" id = "lockdown" name = "lockdown" value = "Lockdown">
+                    <label style = "font-size: 25px" for = "lockdown">Lockdown</label>
+                    <br>
+                    <br><label for = "duration">Duration of Restrictions in Days (min: 2, max: 365): </label>
+                    <br><input style = "font-size: 25px; width: 500px" type = "range" min = "2" max = "365" id = "duration" value = "14" name = "duration" oninput="dCheck(this.value)">
+                    <span id="dError"></span>
+                    <br>
+                    <br><label for = "outcome">Prediction After Number Of Days (min: 2, max: 365): </label>
+                    <br><input style = "font-size: 25px; width: 500px" type = "range" min = "2" max = "365" id = "outcome" value = "14" name = "outcome" oninput="oCheck(this.value)">
+                    <span id="oError"></span>
+                </form>
+            </section>
+        </body>
+        <footer>
+            <footer id = "footer">
+                <footerleft id = "footer-left">
+                    @ 2020
+                    <br> VICOVID19 Data
+                    <br> COVID-19 Trend
+                    <br> Background Image Source: 
+                    <br> <a style = color:aqua href = "https://www.dydao.com/87939.html">https://www.dydao.com/87939.html</a>
+                </footerleft>
+                <footerright id = "footer-right">
+                    Team: 
+                    <br> Ramon Aguila s3840883
+                    <br> Yuxiang Bai s3776877
+                    <br> Qiwen Dun s3789330
+                    <br> Matthew Howatson s3835344
+                    <br> Huiyu Wang s3737937
+                    <br> Lunke Zhu s3816935
+                </footerright>
+            </footer>
+        </footer>
+    </main>
+    
+</html>
