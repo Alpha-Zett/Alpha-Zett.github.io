@@ -7,13 +7,13 @@
                 <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "150" height = "120">
                 <a href = "Home.html">HOME</a>
                 <a href = "Map.html">MAP</a>
-                <a href = "Contact.html">CONTACT TRACING</a>
+                <a id = "active" href = "Contact.html">CONTACT TRACING</a>
                 <a href = "Trend.html">TREND FORECAST</a>
-                <a id = "active" href = "Presentation.html">CASES PRESENTATION</a>
+                <a href = "Presentation.html">CASES PRESENTATION</a>
             </nav>
-            <img src = "assets/contacttracing.jpg" alt = "contacttracing" width = "1500">
+            <img src = "assets/coronavirusheader.jpg" alt = "contacttracing" width = "1500">
             <br><ref id = "reference">
-                <a href = "https://www.google.com/search?q=contact+tracing&sxsrf=ALeKk039FQ7bEgkRN7zZAWTaEu-el6rrTQ:1601078388869&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjW5IDlwYXsAhWQWX0KHZS1ArUQ_AUoAnoECAwQBA&biw=1536&bih=754&dpr=1.25#imgrc=8TCdd-IUf83wnM">Image Source</a>
+                <a href = "https://www.google.com/search?q=covid-19+presentation&rlz=1C1CHBF_en-GBAU806AU806&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiu8PmSypzsAhWDILcAHYHzCVMQ_AUoAXoECBUQAw&biw=853&bih=843#imgrc=C4O9yuivMzps3M">Image Source</a>
             </ref>
             <br><header id = "header"><b>COVID-19 Cases Presentation</b></header>
         </head>
@@ -26,14 +26,31 @@
                     document.getElementById("pwError").innerHTML=value;
                 }
             </script>
-            <section id = "">
-                <header id = "header">Victoria Today Data</header>
-                <form name = "loginForm">
-                    <div class="section1Bottom">
-						<ul>
+
+                <div id="container">
+                    <div class="section" id="section-1">
+                        <div class="shuju">
+                            <div class="section1Top">
+                                <div class="section1TopLeft">
+                                    <h2>Victoria Data</h2>
+                                </div>
+                                <div class="section1TopRight">
+                                    <p>Latest Date: 5.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: DHHS</p>
+                                </div>
+                            </div>
+                            <div class="section1Bottom">
+                            <ul>
+                            <li class="NC">
+								<h2>New Cases</h2>
+								<p>12</p>
+							</li>
 							<li class="EC">
 								<h2>Existing Confirmed</h2>
 								<p>241</p>
+                            </li>
+                            <li class="TT">
+								<h2>Total Tested</h2>
+								<p>2745493</p>
 							</li>
 							<li class="CC1">
 								<h2>Cumulative Confirmed</h2>
@@ -48,9 +65,181 @@
 								<p>806</p>
 							</li>
 						</ul>
-					</div>
-                </form>
-            </section>
+                    </div>
+                </div>
+
+            <div class="map">
+                <div class="section2Top">
+                    <div class="section2TopLeft">
+                        <p></p>
+                    </div>
+                    <div class="section2TopRight">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        <div id="table1" style="width: 100%;height: 400px">
+        </div>
+        <script type="text/javascript">
+                var dom = document.getElementById("table1");
+                var myChart = echarts.init(dom);
+                var app = {};
+                option = null;
+                var days = _g_map_data_days
+
+                var province = _g_map_data_province
+
+                var data = _g_map_data_data
+
+                option = {
+                    baseOption: {
+
+                        timeline: {
+                            axisType: 'category',
+                            // realtime: false,
+                            loop: false,
+                            autoPlay: true,
+                            playInterval: 1000,
+                            symbolSize: 4,
+                            left: '5%',
+                            bottom: '-5%',
+                            width: '85%',
+                            // controlStyle: {
+                            //     position: 'left'
+                            // },
+                            data: days,
+                            tooltip: {
+                                formatter: days
+                            },
+                        },
+
+                        tooltip: {
+                            show: true,
+                            formatter: function(params) {
+                                return params.name + '：' + params.data['value']
+                            },
+                        },
+                        visualMap: {
+                            type: 'piecewise',
+                            pieces: [{
+                                    min: 5001,
+                                    color: '#9c0707'
+                                },
+                                {
+                                    min: 1001,
+                                    max: 5000,
+                                    color: '#db1500'
+                                },
+                                {
+                                    min: 501,
+                                    max: 1000,
+                                    color: '#de4617'
+                                },
+                                {
+                                    min: 101,
+                                    max: 500,
+                                    color: '#e8911d'
+                                },
+                                {
+                                    min: 1,
+                                    max: 100,
+                                    color: '#f1ca95'
+                                },
+                                {
+                                    value: 0,
+                                    color: '#efefef'
+                                }
+                            ],
+                            itemGap:4,
+                            orient: 'vertical',
+                            itemWidth: 25,
+                            itemHeight: 15,
+                            showLabel: true,
+                            seriesIndex: [0],
+
+                            textStyle: {
+                                color: '#7B93A7'
+                            },
+                            bottom: '8%',
+                            left: "3%",
+                        },
+                        xAxis: {
+                            min:0,
+                            max:50000,
+                            show: false
+                        },
+                        yAxis: [{
+                            inverse: true,
+                            show: false
+                        }],
+                        geo: {
+                            map: 'Australia',
+                            label: {
+                                emphasis: {
+                                    show: false,
+                                }
+                            },
+                            itemStyle: {
+                                emphasis: {
+                                    areaColor: '#e8911d'
+                                }
+                            }
+                        },
+                        series: [{
+                                name: 'mapSer',
+                                type: 'map',
+                                map: 'Australia',
+                                roam: false,
+                                geoIndex: 0,
+                                label: {
+                                    show: false,
+                                },
+                            }
+                        ],
+
+                    },
+                    animationDurationUpdate: 3000,
+                    animationEasingUpdate: 'quinticInOut',
+                    options: []
+                };
+                for (var n = 0; n < days.length; n++) {
+
+                    var res = [];
+                    for (j = 0; j < data[n].length; j++) {
+                        res.push({
+                            name: province[j],
+                            value: data[n][j]
+                        });
+                    }
+                    res.sort(function(a, b) {
+                        return b.value - a.value;
+                    }).slice(0, 6);
+
+                    res.sort(function(a, b) {
+                        return a.value - b.value;
+                    });
+                    option.options.push({
+                        title: [{
+                                text: days[n],
+                                textStyle: {
+                                    color: '#999',
+                                    fontSize: 28
+                                },
+                                left:20,
+                                top:20,
+                            }
+                        ],
+                        series: [{
+                            type: 'map',
+                            data: res
+                        }]
+                    });
+                }
+                if (option && typeof option === "object") {
+                    myChart.setOption(option, true);
+                }
+            </script>
+
         </body>
         <footer id = "footer">
             <footerleft id = "footer-left">
