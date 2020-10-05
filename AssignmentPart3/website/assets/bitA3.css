@@ -77,6 +77,32 @@ main {
     background: #FFFFFF; 
 }
 
+#section-1{margin-top: 30px;width: 100%;display: block;}
+.shuju{width: 100%;background: #fff;padding-top: 15px;padding-bottom: 10px;}
+.section1Top{width: 94%;height: auto;overflow: hidden;margin:0 auto;}
+.section1TopLeft{width: 26%;float: left;}
+.section1TopRight{width: 70%;float: right;}
+.section1TopRight p{font-size: 14px;color: #8b8b8b;text-align: right;line-height: 22px;}
+.section1Bottom{width: 94%;margin:15px auto 0;}
+.section1Bottom ul{width: 100%;overflow: hidden;}
+.section1Bottom ul li{width: 33%;text-align: center;float: left;}
+.section1Bottom ul li h2{font-size: 20px;width: 80%;border-bottom: 1px solid #4e4e4e;font-weight: normal;line-height: 35px;text-align: center;margin:0 auto;}
+.section1Bottom ul li p{font-size: 22px;width: 100%;line-height: 40px;font-weight: bold;color: #5c73ff}
+.section1Bottom ul li .jiao{font-size: 12px;font-weight: inherit;color: #4e4e4e;margin-top: -15px;}
+.section1Bottom ul .EC p{font-size: 28px;line-height: 50px;}
+.section1Bottom ul li .jiao span{color: #5c73ff}
+.section1Bottom ul li .green{color: #32b16c}
+.section1Bottom ul li .grow{color: #4e4e4e}
+.section1Bottom ul li .jiao .green{color: #32b16c}
+.section1Bottom ul li .jiao .grow{color: #4e4e4e}
+
+.map{width: 100%;background: #fff;padding-top: 15px;padding-bottom: 25px;position: relative;}
+.section2Top{width: 94%;height: auto;overflow: hidden;margin:0 auto;}
+.section2TopLeft{width: 27%;float: left;}
+.section2TopRight{width: 70%;float: right;}
+.section2TopRight p{font-size: 14px;color: #8b8b8b;text-align: right;line-height: 35px;}
+#table1{position: relative;}
+
 h1 {
     text-align:left;
     font-size:35px;
@@ -171,5 +197,3 @@ th, td {
     margin-left: 300px;
     margin-bottom: 100px;
 }
-
-
