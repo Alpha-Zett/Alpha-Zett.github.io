@@ -1,0 +1,545 @@
+body {
+  background-color: #ffffff;
+  margin: 0px;
+  font-family: 'Nunito', sans-serif;
+}
+
+/* unvisited link */
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #ffffff;
+}
+
+/* mouse over link */
+a:hover {
+  color: #faf4ac;
+}
+
+/* selected link */
+a:active {
+  color: #c5c5c5;
+}
+
+.headerSection {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #404040;
+  /* overflow: hidden; */
+  z-index: 10;
+}
+
+#viCOVIDLogo {
+  float: left;
+  /* display: inline-block; */
+  width: 120px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.st0:hover {
+  stroke-width: 250px;
+  fill: #faf4ac;
+}
+
+/* Navbar container */
+.navbar {
+  padding-top: 24px;
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* code from w3.org/Style/Examples/007/centre.en.html for tidying up nav section on smaller screen - as it looked untidy */
+
+@media screen and (max-width: 660px) and (min-width: 499px) {
+
+  #abcLogo, .navbar
+  {float: none;}
+
+  .navbar
+  {padding: 0px 40px;}
+
+  #abcLogo
+  {margin-left: 17px;}
+
+  #video
+  {margin-top: 172px;}
+
+  .overlayText
+  {margin-top: 20rem !important;}
+   
+  #topText {padding: 1rem; font-size: 2rem !important;}
+  
+}
+
+@media screen and (max-width: 2000px) and (min-width: 660px) {
+
+  #video
+  {margin-top: 79px;}
+
+  .overlayText {margin-top: 9rem !important;}
+   
+  #topText {padding: 1rem; font-size: 3rem !important;}
+
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* This is the original description... it is not red anymore Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover, .dropbtn, .dropbtn:hover {
+  color: #faf4ac;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1e3f65;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #1e3f65;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.social {
+  float: right;
+  margin-right: 24px;
+}
+
+.fa-facebook-square {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.fa-facebook-square:hover {
+  font-size: 25px;
+  color: #98c7dd;
+}
+
+.fa-instagram {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.fa-instagram:hover {
+  font-size: 25px;
+  color: #98c7dd;
+}
+
+.fa-twitter-square {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.fa-twitter-square:hover {
+  font-size: 25px;
+  color: #98c7dd;
+}
+
+.container {
+  position: relative;
+}
+
+#video {
+    position: relative;
+    z-index:0;
+}
+
+.overlayText {
+  position: absolute;
+  top:0;
+  right:0;
+  margin-top: 7rem;
+  z-index:1;
+}
+ 
+#topText {
+  padding: 1rem;
+  background-color: rgba(196, 145, 4, 0.8);
+  color: #ffffff;
+  font-size: 4rem;
+}
+
+.sectionHeadline {
+  /* top: 506px; */
+  position: relative;
+  top: -5px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #1e3f65;
+  background-color: #ffffff;
+}
+
+/* The below code is from https://www.youtube.com/watch?v=nJfrThH92WU and is about setting columns with CSS */
+
+p {
+  margin-top: 0;
+}
+
+.paragraphStyle {
+  position: relative;
+  top: -5px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 60px;
+  column-count: 3;
+  column-width: 250px;
+  column-rule: 2px dotted #1e3f65;
+  column-gap: 4em;
+  background-color: #ffffff;
+  line-height: 1.6;
+  
+}
+
+.paragraphStyle a:visited {
+  color: #1e3f65;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header menu menu main main'
+    'header header menu menu main main'
+    'header header menu menu main main'
+    'header header menu menu main main'
+    'header header menu menu main main'
+    'header header menu menu main main';
+  grid-gap: 12px;
+  color: #ffffff;
+  background-color: #1e3f65;
+  padding-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.item4 { grid-area: header; }
+.item5 { grid-area: menu; }
+
+
+.grid-container-contact {
+  position: relative;
+  top: -5px;
+  display: grid;
+  grid-template-areas:
+    'header header menu menu menu menu'
+    'header header menu menu menu menu'
+    'header header menu menu menu menu'
+    'header header menu menu menu menu'
+    'header header menu menu menu menu'
+    'header header menu menu menu menu';
+  grid-gap: 12px;
+  color: #1e3f65;
+  background-color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.6;
+}
+
+.item6 { grid-area: header; }
+.item7 { grid-area: menu; }
+
+.grid-container-register {
+  position: relative;
+  top: -5px;
+  display: grid;
+  grid-template-areas:
+    'header menu';
+  grid-gap: 40px;
+  color: #1e3f65;
+  background-color: #ffffff;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  line-height: 1.6;
+}
+
+/* unvisited link */
+.grid-container-contact a:link .grid-container-register a:link {
+  color: #2c5a8f;
+  text-decoration: none;
+}
+
+/* visited link */
+.grid-container-contact a:visited .grid-container-register a:visited {
+  color: #142b44;
+}
+
+/* mouse over link */
+.grid-container-contact a:hover .grid-container-register a:hover {
+  color: #274b74;
+}
+
+/* selected link */
+.grid-container-contact a:active .grid-container-register a:active {
+  color: #336dac;
+}
+
+.grid-container .grid-container-contact > div {
+  text-decoration: none;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.grid-container-contact > div {
+  text-decoration: none;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+
+/* Logo in the footer area */
+
+.copyright {
+  /* float: left; */
+  padding-left: 40px;
+  color: #ffffff;
+  font-size: 14px; 
+}
+
+/* Below code sourced and adapted from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+#myBtn {
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #ffffff; /* Set a background color */
+  color: #1e3f65; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  margin-left: 40px;
+  padding: 15px;
+  border-radius: 23px 23px 0px 0px; /* Rounded corners */
+  font-size: 14px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: rgba(196, 145, 4, 0.8); /* Add a dark-grey background on hover */
+}
+
+/* Below code sourced and adapted from https://www.w3schools.com */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  /* border-radius: 4px; */
+  /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #1e3f65;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #142a44;
+}
+
+/* Add a background color and some padding around the form */
+.container-contact {
+  /* border-radius: 5px; */
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#registration_form {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* for errors */
+h3 {
+  color: red;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+input {
+  padding: 10px 0px;
+  width: 100%;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+}
+
+/* for errors */
+#registration_form .error {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+
+
+.overlayText {
+  position: absolute;
+  top:0;
+  right:0;
+  margin-top: 7rem;
+  z-index:1;
+}
+
+#flip {
+  position: absolute;
+  top:110px;
+  right:0;
+  width: 250px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* text-align: center; */
+  background-color: #eee669;
+  /* border: solid 1px #c3c3c3; */
+  z-index:3;
+}
+
+#panel {
+  position: absolute;
+  top:152px;
+  right:0;
+  width: 250px;
+  padding: 5px;
+  /* text-align: center; */
+  background-color: #ffffff;
+  /* border: solid 1px #c3c3c3; */
+  z-index:2;
+}
+
+
+
+/* #panel {
+  padding: 50px;
+  display: none;
+} */
+
+#chatbotTextbox {
+  margin-top: 1rem;
+  width: 170px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  border: solid 1px #c3c3c3;
+}
+
+#chatbotTextboxYellow {
+  margin-top: 1rem;
+  margin-left: 40px;
+  width: 170px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  background-color: #eee669;
+  border: solid 1px #c3c3c3;
+}
+
+#chatbotTextboxType {
+  margin-top: 1rem;
+  width: 210px;
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  border: solid 1px #c3c3c3;
+  color: #b1b0b0;
+}
+
+#flip01 {
+  position: relative;
+  bottom: 47px;
+  left:0;
+  width: 500px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* text-align: center; */
+  color: #ffffff;
+  background-color: #404040;
+  /* border: solid 1px #c3c3c3; */
+  z-index:3;
+}
+
+#panel01 {
+  position: absolute;
+  bottom:89px;
+  left:0;
+  width: 500px;
+  padding: 5px;
+  /* text-align: center; */
+  background-color: #ffffff;
+  /* border: solid 1px #c3c3c3; */
+  z-index:2;
+}
