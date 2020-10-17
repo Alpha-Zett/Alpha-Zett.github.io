@@ -23,8 +23,27 @@ div{
     margin-left:10%;
     margin-right:10%;
 }
-body{
-    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
-}
-    
 
+/* body{
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+} */
+    
+/* unvisited link */
+a:link {
+    color: #547a94;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #585858;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #3a5a70;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #414141;
+  }
