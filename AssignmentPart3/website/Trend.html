@@ -1,160 +1,206 @@
 <!DOCTYPE html>
 <html>
-    <main>
-        <head>
-            <link rel = "stylesheet" type = "text/css" href = "assets/bitA3.css">
-            <nav id = "topnav">
-                <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "150" height = "120">
-                <!-- <a href = "Home.html">HOME</a> --> 
-                <a href = "Map.html">MAP</a>
-                <a href = "Contact data.html">CONTACT TRACING</a>
-                <a id = "active" href = "Trend.html">TREND FORECAST</a>
-                <a href = "Presentation.html">CASES PRESENTATION</a>
-                <a href = "feed.html">FEED</a>
-            </nav>
-            <img src = "assets/COVID19future.jpg" alt = "covidfuture" width = "1500">
-            <br><ref id = "reference">
-                <a href = "https://www.google.com/search?q=future+of+covid+19&sxsrf=ALeKk01cRii7JDgk0lSS_D1f-8j7RKRueg:1601035086770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjNrvq8oITsAhXRzTgGHV_2CBYQ_AUoAnoECAwQBA&biw=1536&bih=706#imgrc=nt1hT16xSZDpsM">Image Source</a>
-            </ref>
-            <br><header id = "header"><b>COVID-19 Trend Forecast</b></header>
-        </head>
-        <body>
-            <section id = "content">
-                For more details about this feature and its calculations please click <a href = "TrendDes.html">Here</a>
-            </section>
-            <script type = "text/javascript">
-                function predictCheck(value){
-                    if (document.getElementById("SecondWave").checked == false && document.getElementById("FirstWave").checked == false) {
-                        document.getElementById("noCases").innerHTML="Please choose either first wave or second wave.";
-                    } else if (document.getElementById("TwoWeeks").checked == false && document.getElementById("OneMonth").checked == false && document.getElementById("TwoMonths").checked == false) {
-                        document.getElementById("noCases").innerHTML="Please choose a time after restriction(s).";
-                    } 
-                    if (document.getElementById("SecondWave").checked == true) {  
-                        if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == false) {
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="309";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="858";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="3432";
-                            }
-                        } else if (document.getElementById("mask").checked == true && document.getElementById("distance").checked == false) {   
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="286";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="420";
-                            } else if (document.getElementById("TwoMonths").checked == true){
-                                document.getElementById("noCases").innerHTML="200";
-                            }                             
-                        } else if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == true) {   
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="290";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="511";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="409";
-                            } 
-                        } else {
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="260";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="350";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="57";
-                            } 
-                        }                 
-                    } else if (document.getElementById("FirstWave").checked == true) {
-                        if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == false) {
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="80";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="160";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="480";
-                            }                          
-                        } else if (document.getElementById("mask").checked == true && document.getElementById("distance").checked == false) {   
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="60";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="12";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="3";
-                            }                             
-                        } else if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == true) {   
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="74";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="14";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="6";
-                            } 
-                        } else {
-                            if (document.getElementById("TwoWeeks").checked == true) {
-                                document.getElementById("noCases").innerHTML="53";
-                            } else if (document.getElementById("OneMonth").checked == true) {
-                                document.getElementById("noCases").innerHTML="9";
-                            } else if (document.getElementById("TwoMonths").checked == true) {
-                                document.getElementById("noCases").innerHTML="0";
-                            } 
-                        }                           
-                    }                     
+<main>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="assets/bitA3.css">
+        <nav id="topnav">
+            <img src="assets/vicovid19data.png" alt="vicovid19data" width="150" height="120">
+            <a href="Home.html">HOME</a>
+            <a href="Map.html">MAP</a>
+            <a href="Contact.html">CONTACT TRACING</a>
+            <a id="active" href="Trend.html">TREND FORECAST</a>
+        </nav>
+        <img src="assets/COVID19future.jpg" alt="covidfuture" width="1500">
+        <br>
+        <ref id="reference">
+            <a
+                href="https://www.google.com/search?q=future+of+covid+19&sxsrf=ALeKk01cRii7JDgk0lSS_D1f-8j7RKRueg:1601035086770&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjNrvq8oITsAhXRzTgGHV_2CBYQ_AUoAnoECAwQBA&biw=1536&bih=706#imgrc=nt1hT16xSZDpsM">Image
+                Source</a>
+        </ref>
+        <br>
+        <header id="header"><b>COVID-19 Trend Forecast</b></header>
+    </head>
+
+    <body>
+        <section id="content">
+            <h1 id="h1">Introduction</h1>
+            As governments around the world implement different ways to counter the virus, most citizens do not fully
+            understand the reasons behind government actions or unsure of whether their actions are reliable or not.
+            COVID-19 Trend allows you to make predictions on future pandemic of Victoria based on the restrictions you
+            choose. Of
+            course, there are other factors that can affect the outcomes:
+            <ul>
+                <li>Date in which the restrictions take place
+                    <br>Different dates have different numbers of active cases and daily increases in the last few days
+                    etc. Thus, the date could mean how serious the infection is.
+                </li>
+                <li>Duration of restrictions
+                    <br>It’s obvious that the longer the duration of restrictions stay in place, the safer everyone is.
+                    However, these measurements cannot last forever as the country needs to keep the economy running and
+                    people need to work to make a living. So, balancing the safety and economy is very important. If the
+                    restrictions do not last long enough, the number of cases can bounce back and ruin the previous
+                    measurements that everyone worked hard for.
+                </li>
+            </ul>
+            Obviously, the predicted outcome cannot be 100% accurate as there are many other factors that are impossible
+            to be accurately taken into account, such as not everyone will obey the measurements, it could be 5%, 10% or
+            different, no one knows. We are assuming “95% of people obeying the restrictions” to make the calculations.
+            Population density can be different near every household which can also somewhat affect the outcome of
+            prediction.
+            <h1 id="h1">Brief guide on the system</h1>
+            You can choose one of the two waves of the outbreaks in Victoria to make a prediction. The first wave
+            happened in March and the second wave happened in July. If you choose the first wave, the system would
+            calculate based on the data from 16th March. If you choose the second wave, the system would calculate based
+            on the data from 9th July.
+            <br>You can then choose the restrictions but it is not required. If no restrictions
+            are chosen, the system would calculate with no restrictions taking place to combat the virus. Of course, you
+            can choose both restrictions as well.
+            <br>There are three options for time after the restrictions take place, each option can lead to a different
+            outcome.
+            <br>The outcome of the prediction shows the number of new cases after the chosen time after the restrictions
+            take place with a brief reason as to why. To give you a comparison, the number of new cases on 16th March
+            (first wave) was 16 and the number of new cases on 9th July (second wave) was 143. For more details of the
+            cases in Victoria please visit: <a href = "https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data?fbclid=IwAR05xqBdZd0nwchIjQOxdPYHBkuhWgIVI8USA0OGsoAWM8XzAzhuJSWgLpQ">https://www.dhhs.vic.gov.au/victorian-coronavirus-covid-19-data?fbclid=IwAR05xqBdZd0nwchIjQOxdPYHBkuhWgIVI8USA0OGsoAWM8XzAzhuJSWgLpQ</a>
+        </section>
+        <script type="text/javascript">
+            function predictCheck(value) {
+                if (document.getElementById("SecondWave").checked == false && document.getElementById("FirstWave").checked == false) {
+                    document.getElementById("noCases").innerHTML = "Please choose either first wave or second wave.";
+                } else if (document.getElementById("TwoWeeks").checked == false && document.getElementById("OneMonth").checked == false && document.getElementById("TwoMonths").checked == false) {
+                    document.getElementById("noCases").innerHTML = "Please choose a time after restriction(s).";
                 }
-            </script>
-            <section id = "form-trend">
-                <h1 id = "h1">Make Your Predictions</h1>
-                <form name = "predictionForm">
-                    <label for = "time">Which wave of the epidemic in Victoria would you like to choose (required): </label>
-                    <span id="noWaves"></span>
-                    <br><input style = "font-size: 25px" type = "radio" id = "FirstWave" name = "Wave" value = "first" onclick = "firstCheck(this.value)">
-                    <label style = "font-size: 25px" for = "FirstWave">First Wave</label>
-                    <span id = "wFirst"></span>
-                    <br><input style = "font-size: 25px" type = "radio" id = "SecondWave" name = "Wave" value = "second" onclick = "secondCheck(this.value)">
-                    <label style = "font-size: 25px" for = "SecondWave">Second Wave</label>
-                    <span id = "wSecond"></span>
-                    <br>
-                    <br><label for = "restrictions">Restrictions: </label>
-                    <br><input type = "checkbox" id = "mask" name = "mask" value = "Mask" name = "mask" onclick = "maskCheck(this.value)">
-                    <label style = "font-size: 25px" for = "mask">Mandatory Masks in public</label>
-                    <br><input type = "checkbox" id = "distance" name = "distance" value = "SocialDistance" name = "distance" onclick = "distanceCheck(this.value)">
-                    <label style = "font-size: 25px" for = "distance">Social Distancing in public</label>
-                    <br>
-                    <br><label for = "time">Time after the restrictions take place (required): </label>
-                    <span id="noTime"></span>
-                    <br><input style = "font-size: 25px" type = "radio" id = 'TwoWeeks' name = "Time" value = "twoweeks">
-                    <label style = "font-size: 25px" for = "TwoWeeks">2 Weeks</label>
-                    <span id = "tw"></span>
-                    <br><input style = "font-size: 25px" type = "radio" id = 'OneMonth' name = "Time" value = "onemonth">
-                    <label style = "font-size: 25px" for = "OneMonth">1 Month</label>
-                    <span id = "om"></span>
-                    <br><input style = "font-size: 25px" type = "radio" id = 'TwoMonths' name = "Time" value = "twomonth">
-                    <label style = "font-size: 25px" for = "TwoMonths">2 Months</label>
-                    <span id = "tm"></span>
-                    <br>
-                    <br><button type = "button" onclick = "predictCheck(this.value)">PREDICT</button>
-                    <br><label for = "Cases">New Cases: </label>
-                    <span id="noCases"></span>
-                    <br>
-                </form>
-            </section>
-        </body>
-        <footer id = "footer">
-            <footerleft id = "footer-left">
-                @ 2020
-                <br> VICOVID19 Data
-                <br> COVID-19 Trend
-                <br> Background Image Source: 
-                <br> <a style = color:aqua href = "https://www.dydao.com/87939.html">https://www.dydao.com/87939.html</a>
-            </footerleft>
-            <footerright id = "footer-right">
-                Team: 
-                <br> Ramon Aguila s3840883
-                <br> Yuxiang Bai s3776877
-                <br> Qiwen Dun s3789330
-                <br> Matthew Howatson s3835344
-                <br> Huiyu Wang s3737937
-                <br> Lunke Zhu s3816935
-            </footerright>
-        </footer>
-    </main>
-    
+                if (document.getElementById("SecondWave").checked == true) {
+                    if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == false) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "309. The first 2 weeks can be a steady increase in cases. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "858. The second wave had a much bigger outbreak than the first wave. Without any restrictions, the number of new cases will increase dramatically after 2 weeks. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "3432. The second wave had a much bigger outbreak than the first wave. Without any restrictions, the number of new cases will keep increasing dramatically. ";
+                        }
+                    } else if (document.getElementById("mask").checked == true && document.getElementById("distance").checked == false) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "286. Facemasks are very useful in stopping the spread of the virus. However, due to the incubation period of the virus and time between getting tested and receiving the results, the first 2 weeks can still have a steady increase. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "420. Facemasks are very useful in stopping the spread of the virus. However, the second wave was quite deadly due to the failed control on hotel quarantining, but new cases will start to decrease after the 1 month period. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "200. Facemasks are very useful in stopping the spread of the virus. With more than a month of mandatory masks in public, new cases started to reduce significantly and will continue to drop in the future. ";
+                        }
+                    } else if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == true) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "290. Social distancing can definitely help stopping the transmission. We can still see increase in new cases due to the incubation period of the virus and time between getting tested and receiving the results. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "511. Social distancing can definitely help stopping the transmission. However, the second wave was quite deadly due to the failed control on hotel quarantining, but new cases will start to decrease after the 1 month period. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "409. Social distancing can definitely help stopping the transmission. Although the number of new cases is still quite high, we are starting to see a decline and will continue to reduce slowly. ";
+                        }
+                    } else {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "260. Having two of the most useful restrictions to fight the virus, the outcome will definitely pay off in the future. Although we can still see increase in new cases due to the incubation period of the virus and time between getting tested and receiving the results. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "350. Having two of the most useful restrictions to fight the virus, the outcome will definitely pay off in the future. After one month time, the peak will be over soon. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "57. Having two of the most useful restrictions to fight the virus, it's paying off well. The virus will be under control in the near future if the restrictions are still in place. ";
+                        }
+                    }
+                } else if (document.getElementById("FirstWave").checked == true) {
+                    if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == false) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "80. The first 2 weeks can be a steady increase in cases. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "160. Without any restrictions, the number of new cases will increase dramatically after 2 weeks. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "480. Without any restrictions, the number of new cases will keep increasing dramatically. ";
+                        }
+                    } else if (document.getElementById("mask").checked == true && document.getElementById("distance").checked == false) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "60. Facemasks are very useful in stopping the spread of the virus. The first 2 weeks can be difficult to see the payoffs. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "12. Facemasks are very useful in stopping the spread of the virus. As the first wave only has a few cases, 1 month of mandatory masks can reduce the daily increase significantly. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "3. Facemasks are very useful in stopping the spread of the virus. As the first wave only has a few cases, 2 months of mandatory masks can pretty much defeat the virus. ";
+                        }
+                    } else if (document.getElementById("mask").checked == false && document.getElementById("distance").checked == true) {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "74. Social distancing is quite useful in stopping the spread of the virus. The first 2 weeks can be difficult to see the payoffs. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "14. Although social distancing is not as effective as facemasks, it can still help reduce the daily increase as the first wave is quite a small wave. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "6. Although social distancing is not as effective as facemasks, the virus is pretty much under control after 2 months. ";
+                        }
+                    } else {
+                        if (document.getElementById("TwoWeeks").checked == true) {
+                            document.getElementById("noCases").innerHTML = "53. Both restrictions are very useful in stopping the spread of the virus. The first 2 weeks can be difficult to see the payoffs. ";
+                        } else if (document.getElementById("OneMonth").checked == true) {
+                            document.getElementById("noCases").innerHTML = "9. Having both restrictions on a small outbreak is definitely strict, but it can payoff massively. ";
+                        } else if (document.getElementById("TwoMonths").checked == true) {
+                            document.getElementById("noCases").innerHTML = "0. In 2 months time, with both restrictions in place, it is very likely to see no new cases. ";
+                        }
+                    }
+                }
+            }
+        </script>
+        <section id="form-trend">
+            <h1 id="h1">Make Your Predictions</h1>
+            <form name="predictionForm">
+                <label for="time">Which wave of the epidemic in Victoria would you like to choose (required): </label>
+                <span id="noWaves"></span>
+                <br><input style="font-size: 25px" type="radio" id="FirstWave" name="Wave" value="first"
+                    onclick="firstCheck(this.value)">
+                <label style="font-size: 25px" for="FirstWave">First Wave</label>
+                <span id="wFirst"></span>
+                <br><input style="font-size: 25px" type="radio" id="SecondWave" name="Wave" value="second"
+                    onclick="secondCheck(this.value)">
+                <label style="font-size: 25px" for="SecondWave">Second Wave</label>
+                <span id="wSecond"></span>
+                <br>
+                <br><label for="restrictions">Restrictions: </label>
+                <br><input type="checkbox" id="mask" name="mask" value="Mask" name="mask"
+                    onclick="maskCheck(this.value)">
+                <label style="font-size: 25px" for="mask">Mandatory Masks in public</label>
+                <br><input type="checkbox" id="distance" name="distance" value="SocialDistance" name="distance"
+                    onclick="distanceCheck(this.value)">
+                <label style="font-size: 25px" for="distance">Social Distancing in public</label>
+                <br>
+                <br><label for="time">Time after the restrictions take place (required): </label>
+                <span id="noTime"></span>
+                <br><input style="font-size: 25px" type="radio" id='TwoWeeks' name="Time" value="twoweeks">
+                <label style="font-size: 25px" for="TwoWeeks">2 Weeks</label>
+                <span id="tw"></span>
+                <br><input style="font-size: 25px" type="radio" id='OneMonth' name="Time" value="onemonth">
+                <label style="font-size: 25px" for="OneMonth">1 Month</label>
+                <span id="om"></span>
+                <br><input style="font-size: 25px" type="radio" id='TwoMonths' name="Time" value="twomonth">
+                <label style="font-size: 25px" for="TwoMonths">2 Months</label>
+                <span id="tm"></span>
+                <br>
+                <br><button style = "font-size: 25px" type="button" onclick="predictCheck(this.value)">Predict! </button>
+                <br>
+                <br><label for="Cases">New Cases: </label>
+                <span id="noCases"></span>
+                <br>
+            </form>
+        </section>
+    </body>
+    <footer id="footer">
+        <footerleft id="footer-left">
+            @ 2020
+            <br> VICOVID19 Data
+            <br> COVID-19 Trend
+            <br> Background Image Source:
+            <br> <a style=color:aqua href="https://www.dydao.com/87939.html">https://www.dydao.com/87939.html</a>
+        </footerleft>
+        <footerright id="footer-right">
+            Team:
+            <br> Ramon Aguila s3840883
+            <br> Yuxiang Bai s3776877
+            <br> Qiwen Dun s3789330
+            <br> Matthew Howatson s3835344
+            <br> Huiyu Wang s3737937
+            <br> Lunke Zhu s3816935
+        </footerright>
+    </footer>
+</main>
+
 </html>
