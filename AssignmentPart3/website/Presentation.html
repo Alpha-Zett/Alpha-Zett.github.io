@@ -7,12 +7,11 @@
                 <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "150" height = "120">
                 <a href = "Home.html">HOME</a>
                 <a href = "Map.html">MAP</a>
-                <a href = "Contact data.html">CONTACT TRACING</a>
+                <a href = "Contact.html">CONTACT TRACING</a>
                 <a href = "Trend.html">TREND FORECAST</a>
                 <a id = "active" href = "Presentation.html">CASES PRESENTATION</a>
-                <a href = "feed.html">Feed</a>
             </nav>
-            <img src = "assets/coronavirusheader.jpg" alt = "contacttracing" width = "1500" height = "700">
+            <img src = "assets/coronavirusheader.jpg" alt = "contacttracing" width = "1500">
             <br><ref id = "reference">
                 <a href = "https://www.google.com/search?q=covid-19+presentation&rlz=1C1CHBF_en-GBAU806AU806&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiu8PmSypzsAhWDILcAHYHzCVMQ_AUoAXoECBUQAw&biw=853&bih=843#imgrc=C4O9yuivMzps3M">Image Source</a>
             </ref>
@@ -27,6 +26,7 @@
                     document.getElementById("pwError").innerHTML=value;
                 }
             </script>
+
                 <div id="container">
                     <div class="section" id="section-1">
                         <div class="shuju">*
@@ -54,7 +54,7 @@
 							        </li>
 							        <li class="CC1">
 								        <h2>Cumulative Confirmed</h2>
-								        <p>20295</p>
+								        <p>20317</p>
 							        </li>
 							        <li class="CC2">
 								        <h2>Cumulative Cured</h2>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
 
-            <div class="map">
+            <!-- <div class="map">
                 <div class="section2Top">
                     <div class="section2TopLeft">
                         <h2>Interactive Map</h2>
@@ -87,7 +87,7 @@
             <script src="./pins-config.js"></script>
             <span id="aujstip"></span>
             <div id="mapwrapper">
-                <div id="mapbase"><!-- V4.1 -->
+                <div id="mapbase">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 660" xml:space="preserve">
                         <g>
                             <path id="aujs1" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M611.871,459.083c-3.738,2.13-7.274,4.513-7.497,7.019c-0.824,9.308,3.208,13.027,5.278,14.063c2.853,1.426,0.159-9.254,2.693-13.553c1.823-3.09,3.487-0.316,5.072-1.742C619.004,463.441,614.645,464.076,611.871,459.083z"/>
@@ -114,7 +114,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="clear"></div>
+            <div class="clear"></div> -->
 
             <div class="biaoge">
                 <div class="section4Top">
@@ -122,44 +122,59 @@
                         <h2>Other location details</h2>
                     </div>
                     <div class="section2TopRight">
-                        <p>Latest Date: 5.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: DHHS</p>
+                        <p>Latest Date: 17.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: Department of Health & WHO</p>
                     </div>
                 </div>
                 <div class="section4ConTil">
                     <h3>Other states and territories</h3>
                 </div>
-                <div id="tableWorld" class="table"></div>
+                <div id="table" class="table"></div>
                 <table width="477" border="0" cellpadding="0" cellspacing="0" style='width:357.75pt;border-collapse:collapse;table-layout:fixed;'>
                     <tr height="21" style='height:15.75pt;'>
                         <th style="border:1px solid grey">State Name</th>
-                        <th style="border:1px solid grey">Confirmed</th>
-                        <th style="border:1px solid grey">Death</th>
+                        <th style="border:1px solid">Confirmed</th>
+                        <th style="border:1px solid">Recovered</th>
                        </tr>
                        <tr height="21" style='height:15.75pt;'>
-                        <td class="xl68" height="21" style='height:15.75pt;' x:str>Total</td>
-                        <td class="xl69" x:num>6894586</td>
-                        <td class="xl70" x:num>200724</td>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>New South Wales</td>
+                        <td class="xl69" x:num>4333</td>
+                        <td class="xl70" x:num>2992</td>
                        </tr>
                        <tr height="21" style='height:15.75pt;'>
-                        <td class="xl69" height="21" style='height:15.75pt;' x:str>United States</td>
-                        <td class="xl69" x:num>6894586</td>
-                        <td class="xl70" x:num>200724</td>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Queensland</td>
+                        <td class="xl69" x:num>1164</td>
+                        <td class="xl70" x:num>1154</td>
                        </tr>
                        <tr height="21" style='height:15.75pt;'>
-                        <td class="xl69" height="21" style='height:15.75pt;' x:str>India</td>
-                        <td class="xl69" x:num>5562663</td>
-                        <td class="xl70" x:num>88935</td>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Western Australia</td>
+                        <td class="xl69" x:num>711</td>
+                        <td class="xl70" x:num>683</td>
                        </tr>
                        <tr height="21" style='height:15.75pt;'>
-                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Brazil</td>
-                        <td class="xl69" x:num>4558040</td>
-                        <td class="xl70" x:num>137272</td>
+                        <td class="xl68" height="21" style='height:15.75pt;' x:str>South Australia</td>
+                        <td class="xl69" x:num>482</td>
+                        <td class="xl70" x:num>472</td>
+                       </tr>
+                       <tr height="21" style='height:15.75pt;'>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Tasmania</td>
+                        <td class="xl69" x:num>230</td>
+                        <td class="xl70" x:num>217</td>
+                       </tr>
+                       <tr height="21" style='height:15.75pt;'>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Australian Capital Territory</td>
+                        <td class="xl69" x:num>113</td>
+                        <td class="xl70" x:num>110</td>
+                       </tr>
+                       <tr height="21" style='height:15.75pt;'>
+                        <td class="xl69" height="21" style='height:15.75pt;' x:str>Northern Territory</td>
+                        <td class="xl69" x:num>33</td>
+                        <td class="xl70" x:num>33</td>
                        </tr>
                 </table>
                 <div class="section4ConTil">
                     <h3>Other countries</h3>
                 </div>
-                <div id="tableWorld" class="table"></div>
+                <div id="table" class="table"></div>
                 <table width="477" border="0" cellpadding="0" cellspacing="0" style='width:357.75pt;border-collapse:collapse;table-layout:fixed;'>
                     <tr height="21" style='height:15.75pt;'>
                         <td class="xl66" height="21" width="186" style='height:15.75pt;width:139.50pt;' x:str>Country Name</td>
