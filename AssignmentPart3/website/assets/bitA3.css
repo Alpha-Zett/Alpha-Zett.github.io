@@ -1,5 +1,6 @@
 body {
     /* background-image: url('coronavirusblue.jpg'); */
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
     background-color: #547a94;
     background-attachment: fixed;
     background-size: 65% 100%;
@@ -215,3 +216,4 @@ th, td {
     margin-left: 300px;
     margin-bottom: 100px;
 }
+
