@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <link rel = "stylesheet" type = "text/css" href = "assets/bitA3.css">
+            <script src="//code.tidio.co/c2xtelcv6cc8lijegnb0npbcmlcj0tv3.js" async></script>
+        </head>
+    
+        <!-- End of Head section -->
+
+        <body>
+      
+        <!-- Start of Navigation -->
+      
+        <nav id = "topnav">
+            <img src = "assets/vicovid19data.png" alt = "vicovid19data" width = "150" height ="120">
+            <a href = "index.html">HOME</a>
+            <a href = "Map.html">MAP</a>
+            <a href = "feed.html">FEED</a>
+            <a href = "Contact.html">CONTACT TRACING</a>
+            <a href = "TrendDes.html">TREND DESCRIPTION</a>
+            <a href = "Trend.html">TREND FORECAST</a>
+            <a href = "Presentation.html">CASES PRESENATION</a>
+        </nav>
+      
+        <!-- End of Navigation -->
+
+            <img src = "assets/coronavirusheader2.jpg" alt = "contacttracing" width = 100%>
+
+
+
+            <br>
+                
+                <!-- Coironavirus Image Source https://cdn.cnn.com/cnnnext/dam/assets/200417125229-01-coronavirus-cdc-image-super-tease.jpg -->
+
+            
+            <br><header id = "header"><b>COVID-19 Cases Presentation</b></header>
+        </head>
+        <body>
+            <script type = "text/javascript">
+                function unCheck(value){
+                    document.getElementById("unError").innerHTML=value;
+                }
+                function pwCheck(value){
+                    document.getElementById("pwError").innerHTML=value;
+                }
+            </script>
+
+
+
+<div id="container">
+    <div class="section" id="section-1">
+        <div class="shuju">*
+            <div class="section1Top">
+                <div class="section1TopLeft">
+                    <h2>Victoria Data</h2>
+                </div>
+                <div class="section1TopRight">
+                    <p>Latest Date: 18.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: DHHS &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                </div>
+            </div>
+            <div class="section1Bottom">
+                <ul>
+                    <li class="NC">
+                        <h2>New Cases</h2>
+                        <p>2</p>
+                    </li>
+                    <li class="ED">
+                        <h2>Existing Confirmed</h2>
+                        <p>137</p>
+                    </li>
+                    <li class="TT">
+                        <h2>Total Tested</h2>
+                        <p>2944356</p>
+                    </li>
+                    <li class="CC1">
+                        <h2>Cumulative Confirmed</h2>
+                        <p>20315</p>
+                    </li>
+                    <li class="CC2">
+                        <h2>Cumulative Cured</h2>
+                        <p>19362</p>
+                    </li>
+                    <li class="CD">
+                        <h2>Cumulative Deaths</h2>
+                        <p>816</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="map">
+<div class="section2Top">
+    <div class="section2TopLeft">
+        <h2>Interactive Map</h2>
+    </div>
+    <div class="section2TopRight">
+        <p>Latest Date: 5.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: DHHS</p>
+    </div>
+</div>
+</div>
+<div id="table1" style="width: 100%;height: 400px"></div>
+<script src="./jquery.min.js"></script>
+<script src="./map-config.js"></script>
+<script src="./map-interact.js"></script>
+<script src="./pins-config.js"></script>
+<span id="aujstip"></span>
+<div id="mapwrapper">
+<div id="mapbase">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 660" xml:space="preserve">
+        <g>
+            <path id="aujs1" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M611.871,459.083c-3.738,2.13-7.274,4.513-7.497,7.019c-0.824,9.308,3.208,13.027,5.278,14.063c2.853,1.426,0.159-9.254,2.693-13.553c1.823-3.09,3.487-0.316,5.072-1.742C619.004,463.441,614.645,464.076,611.871,459.083z"/>
+            <path id="aujs2" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M684.843,325.155c-2.686-1.521-3.896,1.017-5.589,0.574c-3.861-1.008-6.069,4.257-9.381,1.131c-3.311-3.127-2.391,1.655-10.117,3.862c-4.367,1.248,2.943,10.484-6.621,8.461c-4.184-0.886-1.472,6.254-5.335,4.598c-3.863-1.655,0.369-4.598-5.517-8.276c-5.887-3.679-7.175-0.552-10.3-3.555c-3.129-3.002-7.458,2.272-11.222,0.612c-6.254-2.759-2.759,1.71-6.988,2.629c-4.232,0.92-4.384,6.309-4.384,6.309H474.5v97.746c11,6.253,12.6-0.185,18.301,2.391c5.702,2.576,4.569,9.933,8.248,12.14c3.678,2.208-1.855-6.621,7.71-1.471c7.898,4.252,2.075,9.749,6.614,10.485c6.806,1.103,0.731,2.759,7.17,5.333c5.118,2.047,10.85,13.612,17.288,13.244c3.86-0.221-3.312-6.168,5.149-5.335c6.04,0.595,4.598,2.023,15.634,3.679c3.799,0.569,5.284-2.716,10.852,0.184c8.829,4.599,10.117-3.495,12.14-1.655c2.023,1.84,8.875-0.564,8.461,4.966c-0.552,7.357,3.769,10.117,2.392,10.668c-4.599,1.84,23.485,12.487,28.297,17.28c3.461,1.929,4.424-4.901,2.21-8.828c-2.21-3.927,3.676-14.238,2.944-21.107c-0.73-6.867,11.128-17.668,11.781-29.693c0.396-7.389,4.331-6.542,5.15-11.774c0.821-5.233,5.805-7.614,6.874-15.703c1.055-8.05,9.088-11.272,13.002-14.486c7.69-6.291-2.047-1.627,9.813-22.074c6.537-11.27-1.47-11.049,4.66-24.544c2.107-4.63,2.215-17.669,4.426-22.33C685.816,335.954,687.047,330.799,684.843,325.155z M617.418,464.869c-1.585,1.426-3.249-1.348-5.072,1.742c-2.534,4.299,0.159,14.979-2.693,13.553c-2.07-1.035-6.103-4.755-5.278-14.063c0.223-2.506,3.759-4.889,7.497-7.019C614.645,464.076,619.004,463.441,617.418,464.869z"/>
+            <path id="aujs3" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M274.5,284.001V86.092c1,0.695,2.561,1.02,3.128,0.306c4.627-5.831,9.688,4.416,7.726-0.003c-1.962-4.412,2.465-4.03-0.981-6.376c-10.307-7.034,2.445-7.284,2.7-13.742c0.409-10.391,10.794-1.88,7.605-9.326c-3.19-7.446,3.189-5.401,2.7-8.588c-0.494-3.194,3.271-0.571,3.431-4.663c0.167-4.091,3.934,0.244,4.912-3.438c0.983-3.682,2.208,1.148,5.763-2.575c3.56-3.723,0.862,6.667,9.325,2.332c2.327-1.186,2.824,2.372,4.663,0.125c1.838-2.255,10.013-2.204,9.2-5.031c-2.129-7.446,3.034-6.056-1.836-8.587c-4.873-2.54-5.889,2.08-7.976-0.982c-2.087-3.069-1.975-4.596,0.125-4.662c9.45-0.327,9.328,6.697,12.513,4.905c6.834-3.848,4.621,5.401,8.462,4.538c3.841-0.855,2.543,1.562,7.001,1.35c6.903-0.327,9.938,6.382,14.837,4.176c4.914-2.213,5.971,5.15,10.437,2.206c2.68-1.773,4.663,0.125,5.151-2.089c0.488-2.205,4.05-1.467,5.762-4.663c1.724-3.187,4.296-0.834,0.488,1.962c-6.375,4.706-4.161,6.013-1.462,5.275c5.346-1.454,0.236,4.831,5.637,4.176c3.693-0.45,4.662-4.294,1.837-4.906c-2.813-0.615,3.521-3.975,4.545-1.962c3.776,7.432,2.697-0.35,5.031,2.574c4.454,5.603-6.75,7.565-4.914,12.882c1.051,3.01-2.218,6.762-3.186,3.556c-1.267-4.21-13.537,11.086-6.868,9.938c3.143-0.538,3.315-0.613,0.732,2.7c-2.575,3.312,0.002,5.525-3.308,6.507c-3.314,0.981-6.984,7.85-6.373,10.055c0.612,2.213,7.807,3.219,8.848,6.256c1.545,4.587,5.072,2.529,7.381,6.382c3.759,6.298,9.735,5.831,13.164,7.12c8.309,3.122,8.799,6.178,13.799,9.89V284.5h-150V284.001z M293.721,31.456c12.323,2.759,3.311-4.609,11.588,1.287c4.469,3.184,10.484-7.542,8.829-9.381c-1.655-1.84-11.184,3.434-14.531-1.288C294.632,15.06,288.467,30.279,293.721,31.456z M401.907,65.668c-4.738-1.288-8.86,8.092-1.135,8.46c7.726,0.368,1.351-2.219,1.871-4.236C403.164,67.875,408.721,67.52,401.907,65.668z"/>
+            <path id="aujs4" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M474.5,284.5v56.522l-0.12,0.478h135.01c0,0,0.151-5.389,4.384-6.309c4.229-0.919,0.734-5.27,6.988-2.51c3.764,1.66,8.093-3.674,11.222-0.671c3.125,3.003,4.413-0.154,10.3,3.525c5.886,3.678,1.653,6.606,5.517,8.262s1.151-5.492,5.335-4.606c9.564,2.023,2.254-7.216,6.621-8.464c7.727-2.208,6.807-6.992,10.117-3.864c3.312,3.126,5.52-2.14,9.381-1.132c1.693,0.443,2.903-2.096,5.589-0.575c-2.212-5.644-8.009-14.23-6.601-20.119c2.755-11.538-5.487-10.104-1.25-16.688c5.151-8.017-3.771-4.5-3.2-14.231c0.489-8.188-3.271,0.897-5.886-9.569c-1.503-6.026-4.171-1.392-8.589-10.8c-6.704-14.274-8.337,1.963-11.776-10.307c-3.674-13.111-9.65,0-8.343-18.649c0.556-7.875-3.516-1.143-4.906-4.169c-1.393-3.027-4.34-1.88-5.65-5.401c-1.307-3.514-4.246-1.635-3.676,1.229c0.296,1.474,0,2.696-2.698,1.228c-2.702-1.476-4.496-1.72-8.34-19.632c-1.558-7.241-4.912-4.419-9.086-9.569c-4.167-5.158,3.604-3.925-1.712-10.307c-2.992-3.582-4.496,2.046-5.65-1.962c-0.914-3.228-6.048-1.803-7.684-5.073c-1.486-2.965-0.936,1.063-2.784,0c-6.136-3.515,0.084-7.036-7.195-6.709c-3.101,0.143-7.26-3.904-9.979-4.578c-9.242-2.29-4.009-15.708-7.195-16.689c-1.366-0.416-1.801,2.944-3.272,0.981c-1.474-1.962,4.329-7.521-2.297-23.062c-1.334-3.135-9.241-6.543-7.519-11.455c1.716-4.906-4.993-14.391-3.273-16.848c1.719-2.457-2.123-2.859,0.814-5.727c1.907-1.851-5.233-3.187-5.888-6.048c-0.655-2.866-4.329,0.655-6.541-7.362c-0.675-2.449-2.789,1.318-4.748,0.487c-3.675-1.552,0.822,4.419-6.869,3.597c-3.719-0.39-2.606-7.54-4.419-9.321c-4.329-4.255,2.296-7.032-0.82-9.976c-3.104-2.951,1.071-6.954-2.283-8.184c-3.354-1.225,1.226-6.458-3.926-8.503c-5.157-2.047,2.452-9.242-3.115-7.69c-4.255,1.188-3.305-6.743-2.727-12.707c0.359-3.73-3.243-4.425-3.321-5.617c-0.495-7.036-3.513,0.822-7.774,0.863c-3.104,0.027,2.297,6.994-4.537,17.544c-6.941,10.717-4.953,8.72-3.188,10.056c5.931,4.504-3.966,4.335-0.738,12.151c1.407,3.398-5.684,5.435-1.475,13.738c1.744,3.429-3.883,9.45,1.106,15.585c2.631,3.229-5.559,13.169-4.044,17.42c1.504,4.252-2.336,12.882-5.037,14.476c-4.982,2.951,1.308,15.707-17.788,14.481c-9.44-0.604-7.608-3.806-11.163-4.05c-3.563-0.242-2.147-5.082-8.464-8.712c-3.983-2.29-5.944-0.183-10.023-2.385c-2.072-1.119-3.813-2.174-4.813-3.182V284.5H474.5z"/>
+            <path id="aujs5" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M474.5,439.246v83.316c-4-0.996-8.538,0.565-10.201-5.515c-1.167-4.269-1.393-0.907-5.701-7.359c-11.702-17.505,0.978-6.302-2.697-18.161c-2.102-6.766-15.714-20.612-10.556-22.087c4.004-1.142,0.476-6.27-2.458-3.187c-6.052,6.376-5.333,1.557-7.111,3.678c-2.532,3.03-12.4,3.553-7.614-0.491c12.52-10.55,2.235-17.404,0.988-21.35c-2.532-8.015-2.949-7.029-4.912-2.199c-1.964,4.818-0.237,6.625-2.45,10.299c-2.212,3.687,0.327,8.101-5.4,5.152c-1.831-0.938-11.11,6.833-10.063,2.21c2.952-12.918,10.849-0.5,10.315-10.063c-1.226-21.839,9.786-21.214,7.111-26.5c-3.601-7.112,3.188-3.188,0.251-11.037c-1.745-4.629-3.689-8.838-2.951-1.476c0.738,7.363-4.578-0.822-6.625,10.549c-2.047,11.372-14.726,9.078-17.426,15.951c-2.699,6.876-7.85,8.791-8.337,12.274c-0.822,5.805-1.961,4.414-5.4,1.227c-3.438-3.193-0.492-11.511-3.675-14.481c-12.275-11.45-5.583-12.663-8.836-16.682c-4.177-5.161-5.567,2.365-10.313-6.39c-3.208-5.922,3.774,0.738,1.968-7.598c-1.066-4.963-4.897,2.448-6.86-0.494c-1.963-2.944,4.254,0.243-1.217-5.896c-5.484-6.126-4.982,3.69-13.737-2.698c-8.747-6.375-7.046,2.904-16.895-4.414c-20.042-14.885-9.938-4.281-23.007-5.149c-12.606-0.837-20.188,0.01-26.188,1.627V284.5h150v3.18v-3.18h50v56.522l-0.12,0.478h-0.369h0.489V439.246z M418.001,474.072c-3.678,0.98,3.924-6.131-15.696-0.736c-2.839,0.782-1.324,5.28,2.943,5.641C422.661,480.449,421.68,473.091,418.001,474.072z"/>
+            <path id="aujs6" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M595.563,604.054c2.453,6.621-5.915,13.985-6.13,17.658c-0.736,12.508-8.584,0.981-9.811,9.075c-1.323,8.732-3.619,5.028-4.66,8.337c-2.698,8.584-2.697,4.66-9.809,3.925c-7.113-0.736-3.658-3.293-9.811-7.113c-14.224-8.829-6.622-23.298-12.752-30.166c-6.131-6.866-11.038-29.675-3.434-24.524c3.349,2.268,9.413-0.75,25.262,8.829c5.65,3.415,7.356-7.603,15.695-4.415c4.723,1.806,2.943-4.415,6.867-2.452c3.924,1.962,3.345-4.334,6.869-0.491C599.242,588.603,593.111,597.432,595.563,604.054z M524.44,555.25c-3.924,3.679-3.434,12.753,0,11.281C527.874,565.059,525.514,554.243,524.44,555.25z M590.902,563.588c1.962,0.981,0.492,9.81,4.17,5.395c3.679-4.415-2.452-7.849-4.17-10.791C585.998,561.871,588.941,562.606,590.902,563.588z"/>
+            <path id="aujs7" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M594.459,493.875c1.377-0.551-2.943-3.311-2.392-10.668c0.415-5.531-6.438-3.126-8.461-4.966c-2.023-1.839-3.311,6.254-12.14,1.655c-5.569-2.9-7.054,0.386-10.853-0.184c-11.037-1.656-9.595-3.084-15.635-3.679c-8.461-0.833-1.29,5.114-5.15,5.335c-6.438,0.368-12.172-11.197-17.29-13.244c-6.438-2.575-0.368-4.231-7.173-5.333c-4.539-0.736,1.276-6.233-6.622-10.485c-9.565-5.15-4.047,3.678-7.725,1.471c-3.679-2.207-2.515-9.564-8.217-12.14c-5.702-2.575-7.301,3.863-18.301-2.391v83.316c2,0.542,4.461,1.835,6.236,5.529c2.853,5.938,6.109-2.533,11.258,0.488c5.157,3.028,6.123-1.474,10.459,2.7c4.335,4.175,5.551,1.878,7.681,5.15c2.129,3.272,4.326-1.63,5.883,1.723c1.561,3.355,7.451-2.37,12.511-7.359c5.971-5.888,6.222-3.033,8.101-4.915c1.877-1.877-1.061-5.971,3.924-6.133c4.997-0.156,2.003,8.99-0.738,8.835c-5.887-0.321,1.225,3.923,5.154,1.224c3.929-2.698,4.422-0.973,5.396,4.425c0.988,5.396,5.316-1.071,6.138,3.43c1.247,6.866,3.27-3.193,6.383,4.421c2.203,5.399,3.43,4.169,3.192,0c-0.18-3.029,2.202-3.767-1.723-2.213c-2.106,0.837-5.235-3.841,2.46-3.674c7.686,0.155,15.146-10.375,15.946-11.288c0.798-0.926-8.511-1.475-0.244-2.462c4.713-0.559,4.623-5.062,7.85-3.676c5.15,2.209,1.225-1.962,22.826-1.962c12.758,0,3.843-8.837,9.564-5.648C617.944,506.362,589.86,495.715,594.459,493.875z"/>
+            <path id="aujs8" fill="#EBECED" stroke="#FFFFFF" vector-effect="non-scaling-stroke" d="M274.5,284.5v107.804c-15,4.05-15.627,12.94-43.005,12.36c-17.297-0.366-17.419,9.199-33.005,12.76c-8.304,1.896-8.262,19.223-18.406,20.115c-7.258,0.643-2.128-2.201-12.512-0.974c-5.872,0.692-7.12,3.842-9.57,0.486c-2.456-3.354-0.375,0.562-8.591-1.475c-9.899-2.449-16.224,3.868-21.346,1.963c-9.242-3.435-11.861,15.058-19.875,10.314c-3.407-2.016-20.369,16.604-25.519,12.754c-5.158-3.848-15.708,1.47-20.126-2.695c-3.46-3.273-4.202-1.058-8.832-6.385c-10.306-11.859-13.006-2.047-14.482-8.1c-0.925-3.812,0.495-16.604,2.952-13c2.449,3.6,10.929-2.463,8.831-11.037c-2.616-10.716,3.941-19.947,0-27.002c-20.739-37.05-7.12-42.202-15.459-51.525c-3.355-3.755-2.894-10.938-6.874-14.422c-6.708-5.863-0.813-10.61-6.624-19.688c-4.51-7.055-11.892-15.859-13.988-21.594c-3.757-10.304-1.309-12.516,1.962-1.229c1.532,5.27,2.948-0.001,5.4,7.362c2.458,7.364,6.478,1.76,3.925-2.206c-0.574-0.901,1.719-4.908,1.962-3.928c0.251,0.982,1.065,8.263,3.438,6.627c0.854-0.594,2.784-12.519-0.738-13.987c-3.514-1.476-0.411-6.465-5.644-10.064c-4.045-2.781-2.812-5.096-4.415-10.549c-4.005-13.66,7.115-18.895,5.396-23.07c-1.72-4.167,3.043-6.062,0.252-8.342c-5.728-4.661,1.056-8.505,1.71-14.233c0.654-5.721,5.282-5.638,4.176-2.45c-2.457,7.034,0.982,6.299,0,8.343c-0.98,2.042,3.598,4.496,5.4-4.417c1.796-8.915,15.618-9.307,22.081-16.932c9.082-10.717,12.923-5.811,20.613-10.063c7.691-4.251,8.191,3.357,14.726-1.468c9.729-7.203,13.326-2.293,16.437-6.626c3.111-4.333,5.887-4.418,10.063-3.194c4.168,1.228,5.231-0.991,8.587-1.468c27.976-4.008,24.949-25.442,35.087-29.452c6.571-2.595,4.336-5.971,2.208-5.149c-2.125,0.814-3.517-14.884,3.93-17.912c3.71-1.516-1.231-3.111,3.925-3.439c2.979-0.186-0.664-1.717,1.962-4.662c3.355-3.759,3.189,0.495,3.438,2.457c0.245,1.962,10.446,18.497,10.056,15.212c-1.39-11.78-0.571-8.016,3.682-7.118c1.936,0.41-0.487-4.413-4.168-7.607c-3.682-3.187,3.27-2.777,0.981-5.888c-2.29-3.107,0.699-4.28,1.963-1.719c2.779,5.645,1.552-3.026,8.587,3.195c3.64,3.214,4.251,0.075,2.456-2.213c-1.803-2.289,5.846-2.933,1.963-5.888c-5.812-4.418,2.698-13.743,5.15-11.287c2.456,2.457,3.599,2.129,2.944-1.476c-0.654-3.598,9.082,2.13,4.91-5.643c-3.227-6.001-0.248-5.645,2.454-5.394c2.7,0.243,11.044,5.233,9.819-1.477c-1.23-6.708,4.172-1.719,4.909-5.887c0.736-4.175,6.79,1.879,7.61-3.438c0.489-3.2,3.932-3.431,4.424-0.98c0.49,2.457,10.484,2.54,12.287,7.857c1.796,5.318,7.908,4.67,6.406,7.85c-2.696,5.729,5.38,6.005,4.973,1.962c-0.553-5.496,5.144-0.942,9.144,0.923v197.909V284.5h-0.613H274.5z M18.979,280.569c0,0-3.433-3.924-5.64-6.132C15.43,291.292,17.753,284.248,18.979,280.569z"/>
+        </g>
+
+        <g id="visnames">
+            <text id="aujsvn1" transform="matrix(1 0 0 1 563 468)" font-size="18">ACT</text>
+            <text id="aujsvn2" transform="matrix(1 0 0 1 552 415)" font-size="23">NSW</text>
+            <text id="aujsvn3" transform="matrix(1 0 0 1 337 192)" font-size="23">NT</text>
+            <text id="aujsvn4" transform="matrix(1 0 0 1 518 252)" font-size="23">QLD</text>
+            <text id="aujsvn5" transform="matrix(1 0 0 1 367 356)" font-size="23">SA</text>
+            <text id="aujsvn6" transform="matrix(1 0 0 1 549 615)" font-size="18">TAS</text>
+            <text id="aujsvn7" transform="matrix(1 0 0 1 508 513)" font-size="22">VIC</text>
+            <text id="aujsvn8" transform="matrix(1 0 0 1 130 299)" font-size="25">WA</text>
+        </g>
+        <g id="aujspins"></g>
+    </svg>
+</div>
+</div>
+<div class="clear"></div> -->
+
+<!-- <div class="biaoge"> -->
+<div class="section4Top">
+    <div class="section2TopLeft">
+        <h2>Other location details</h2>
+    </div>
+    <div class="section2TopRight">
+        <p>Latest Date: 17.10.2020<span class="_g_date"></span>&nbsp&nbsp&nbsp&nbsp&nbsp Data Source: Department of Health & WHO &nbsp&nbsp&nbsp&nbsp&nbsp</p>
+    </div>
+</div>
+<br><p></p>
+<br><h3 style="color: blue;">Other states and territories</h3>
+<div id="table" class="table"></div>
+<table width="477" border="0" cellpadding="0" cellspacing="0" style='width:357.75pt;border-collapse:collapse;table-layout:fixed;'>
+    <tr height="21" style='height:15.75pt;'>
+        <td class="xl66" height="21" width="186" style='height:15.75pt;width:139.50pt;' x:str>State Name</td>
+        <td class="xl67" width="146" style='width:109.50pt;' x:str>Confirmed</td>
+        <td class="xl66" width="145" style='width:108.75pt;' x:str>Recovered</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>New South Wales</td>
+        <td class="xl69" x:num>4333</td>
+        <td class="xl70" x:num>2992</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Queensland</td>
+        <td class="xl69" x:num>1164</td>
+        <td class="xl70" x:num>1154</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Western Australia</td>
+        <td class="xl69" x:num>711</td>
+        <td class="xl70" x:num>683</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl68" height="21" style='height:15.75pt;' x:str>South Australia</td>
+        <td class="xl69" x:num>482</td>
+        <td class="xl70" x:num>472</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Tasmania</td>
+        <td class="xl69" x:num>230</td>
+        <td class="xl70" x:num>217</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Australian Capital Territory</td>
+        <td class="xl69" x:num>113</td>
+        <td class="xl70" x:num>110</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Northern Territory</td>
+        <td class="xl69" x:num>33</td>
+        <td class="xl70" x:num>33</td>
+       </tr>
+</table>
+<br><p></p>
+<h3 style="color: blue;">Other countries</h3>
+<div id="table" class="table"></div>
+<table width="477" border="0" cellpadding="0" cellspacing="0" style='width:357.75pt;border-collapse:collapse;table-layout:fixed;'>
+    <tr height="21" style='height:15.75pt;'>
+        <td class="xl66" height="21" width="186" style='height:15.75pt;width:139.50pt;' x:str>Country Name</td>
+        <td class="xl67" width="146" style='width:109.50pt;' x:str>Confirmed</td>
+        <td class="xl66" width="145" style='width:108.75pt;' x:str>Death</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl68" height="21" style='height:15.75pt;' x:str>Total</td>
+        <td class="xl69" x:num>31423844</td>
+        <td class="xl70" x:num>966636</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>United States</td>
+        <td class="xl69" x:num>6894586</td>
+        <td class="xl70" x:num>200724</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>India</td>
+        <td class="xl69" x:num>5562663</td>
+        <td class="xl70" x:num>88935</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Brazil</td>
+        <td class="xl69" x:num>4558040</td>
+        <td class="xl70" x:num>137272</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Russia</td>
+        <td class="xl69" x:num>1111157</td>
+        <td class="xl70" x:num>19575</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Colombia</td>
+        <td class="xl69" x:num>770435</td>
+        <td class="xl70" x:num>24397</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Peru</td>
+        <td class="xl69" x:num>768895</td>
+        <td class="xl70" x:num>31369</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mexico</td>
+        <td class="xl69" x:num>700580</td>
+        <td class="xl70" x:num>73697</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Spain</td>
+        <td class="xl69" x:num>682267</td>
+        <td class="xl70" x:num>30904</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>South Africa</td>
+        <td class="xl69" x:num>663282</td>
+        <td class="xl70" x:num>16118</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Argentina</td>
+        <td class="xl69" x:num>640147</td>
+        <td class="xl70" x:num>13482</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>France</td>
+        <td class="xl69" x:num>468069</td>
+        <td class="xl70" x:num>31416</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Chile</td>
+        <td class="xl69" x:num>448523</td>
+        <td class="xl70" x:num>12321</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Iran</td>
+        <td class="xl69" x:num>429193</td>
+        <td class="xl70" x:num>24656</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>United Kingdom</td>
+        <td class="xl69" x:num>406054</td>
+        <td class="xl70" x:num>41951</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bangladesh</td>
+        <td class="xl69" x:num>352178</td>
+        <td class="xl70" x:num>5007</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Saudi Arabia</td>
+        <td class="xl69" x:num>330798</td>
+        <td class="xl70" x:num>4542</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Iraq</td>
+        <td class="xl69" x:num>327580</td>
+        <td class="xl70" x:num>8682</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Pakistan</td>
+        <td class="xl69" x:num>306886</td>
+        <td class="xl70" x:num>6424</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Turkey</td>
+        <td class="xl69" x:num>306302</td>
+        <td class="xl70" x:num>7639</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Italy</td>
+        <td class="xl69" x:num>300897</td>
+        <td class="xl70" x:num>35738</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Philippines</td>
+        <td class="xl71" x:num>291789</td>
+        <td class="xl70" x:num>5049</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Germany</td>
+        <td class="xl71" x:num>277412</td>
+        <td class="xl70" x:num>9405</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Indonesia</td>
+        <td class="xl71" x:num>252923</td>
+        <td class="xl70" x:num>9837</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Israel</td>
+        <td class="xl71" x:num>193374</td>
+        <td class="xl70" x:num>1285</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ukraine</td>
+        <td class="xl71" x:num>185890</td>
+        <td class="xl70" x:num>3716</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Canada</td>
+        <td class="xl71" x:num>148411</td>
+        <td class="xl70" x:num>9283</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bolivia</td>
+        <td class="xl71" x:num>130986</td>
+        <td class="xl70" x:num>7654</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ecuador</td>
+        <td class="xl71" x:num>127643</td>
+        <td class="xl70" x:num>11126</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Qatar</td>
+        <td class="xl71" x:num>123917</td>
+        <td class="xl70" x:num>211</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Romania</td>
+        <td class="xl71" x:num>114648</td>
+        <td class="xl70" x:num>4503</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Dominica</td>
+        <td class="xl71" x:num>109269</td>
+        <td class="xl70" x:num>2064</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Kazakhstan</td>
+        <td class="xl71" x:num>107374</td>
+        <td class="xl70" x:num>1671</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Panama</td>
+        <td class="xl71" x:num>106810</td>
+        <td class="xl70" x:num>2272</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Morocco</td>
+        <td class="xl71" x:num>105346</td>
+        <td class="xl70" x:num>1889</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Belgium</td>
+        <td class="xl71" x:num>103392</td>
+        <td class="xl70" x:num>9950</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Netherlands</td>
+        <td class="xl71" x:num>102832</td>
+        <td class="xl70" x:num>6338</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Egypt</td>
+        <td class="xl71" x:num>102141</td>
+        <td class="xl70" x:num>5787</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Kuwait</td>
+        <td class="xl71" x:num>100683</td>
+        <td class="xl70" x:num>588</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Oman</td>
+        <td class="xl71" x:num>94711</td>
+        <td class="xl70" x:num>865</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Sweden</td>
+        <td class="xl71" x:num>89436</td>
+        <td class="xl70" x:num>5870</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Guatemala</td>
+        <td class="xl71" x:num>86623</td>
+        <td class="xl70" x:num>3137</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>UAE</td>
+        <td class="xl71" x:num>86447</td>
+        <td class="xl70" x:num>405</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>China</td>
+        <td class="xl71" x:num>85307</td>
+        <td class="xl70" x:num>4634</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Poland</td>
+        <td class="xl71" x:num>80699</td>
+        <td class="xl70" x:num>2316</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Japan</td>
+        <td class="xl71" x:num>79771</td>
+        <td class="xl70" x:num>1519</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Belarus</td>
+        <td class="xl71" x:num>76104</td>
+        <td class="xl70" x:num>791</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Honduras</td>
+        <td class="xl71" x:num>72075</td>
+        <td class="xl70" x:num>2204</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ethiopia</td>
+        <td class="xl71" x:num>70422</td>
+        <td class="xl70" x:num>1127</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Portugal</td>
+        <td class="xl71" x:num>69663</td>
+        <td class="xl70" x:num>1925</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Venezuela</td>
+        <td class="xl71" x:num>67443</td>
+        <td class="xl70" x:num>555</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Costa Rica</td>
+        <td class="xl71" x:num>66689</td>
+        <td class="xl70" x:num>760</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Nepal</td>
+        <td class="xl71" x:num>66632</td>
+        <td class="xl70" x:num>429</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bahrain</td>
+        <td class="xl71" x:num>66402</td>
+        <td class="xl70" x:num>227</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Singapore</td>
+        <td class="xl71" x:num>57627</td>
+        <td class="xl70" x:num>27</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Nigeria</td>
+        <td class="xl71" x:num>57437</td>
+        <td class="xl70" x:num>1100</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Uzbekistan</td>
+        <td class="xl71" x:num>52685</td>
+        <td class="xl70" x:num>442</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Czech Republic</td>
+        <td class="xl71" x:num>51637</td>
+        <td class="xl70" x:num>530</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Switzerland</td>
+        <td class="xl71" x:num>50664</td>
+        <td class="xl70" x:num>2054</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Algeria</td>
+        <td class="xl71" x:num>50214</td>
+        <td class="xl70" x:num>1689</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Armenia</td>
+        <td class="xl71" x:num>47667</td>
+        <td class="xl70" x:num>938</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Moldova</td>
+        <td class="xl71" x:num>47446</td>
+        <td class="xl70" x:num>1230</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ghana</td>
+        <td class="xl71" x:num>46062</td>
+        <td class="xl70" x:num>297</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Kyrgyzstan</td>
+        <td class="xl71" x:num>45542</td>
+        <td class="xl70" x:num>1063</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Puerto Rico</td>
+        <td class="xl71" x:num>42476</td>
+        <td class="xl70" x:num>609</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Azerbaijan</td>
+        <td class="xl71" x:num>39378</td>
+        <td class="xl70" x:num>578</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Austria</td>
+        <td class="xl71" x:num>39303</td>
+        <td class="xl70" x:num>771</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Afghanistan</td>
+        <td class="xl71" x:num>39096</td>
+        <td class="xl70" x:num>1445</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Kenya</td>
+        <td class="xl71" x:num>37218</td>
+        <td class="xl70" x:num>659</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Palestine</td>
+        <td class="xl71" x:num>36580</td>
+        <td class="xl70" x:num>269</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Paraguay</td>
+        <td class="xl71" x:num>34260</td>
+        <td class="xl70" x:num>676</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ireland</td>
+        <td class="xl71" x:num>33444</td>
+        <td class="xl70" x:num>1792</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Serbia</td>
+        <td class="xl71" x:num>32938</td>
+        <td class="xl70" x:num>743</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Lebanon</td>
+        <td class="xl71" x:num>30852</td>
+        <td class="xl70" x:num>315</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Libya</td>
+        <td class="xl71" x:num>29446</td>
+        <td class="xl70" x:num>460</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Salvador</td>
+        <td class="xl71" x:num>27954</td>
+        <td class="xl70" x:num>814</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bosnia and Herzegovina</td>
+        <td class="xl71" x:num>25737</td>
+        <td class="xl70" x:num>778</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Denmark</td>
+        <td class="xl71" x:num>24261</td>
+        <td class="xl70" x:num>641</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Korea</td>
+        <td class="xl71" x:num>23106</td>
+        <td class="xl70" x:num>388</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cameroon</td>
+        <td class="xl71" x:num>20598</td>
+        <td class="xl70" x:num>416</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Hungary</td>
+        <td class="xl71" x:num>19499</td>
+        <td class="xl70" x:num>694</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cote d'Ivoire</td>
+        <td class="xl71" x:num>19343</td>
+        <td class="xl70" x:num>120</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bulgaria</td>
+        <td class="xl71" x:num>19123</td>
+        <td class="xl70" x:num>767</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>North Macedonia</td>
+        <td class="xl71" x:num>16867</td>
+        <td class="xl70" x:num>705</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Madagascar</td>
+        <td class="xl71" x:num>16136</td>
+        <td class="xl70" x:num>226</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Greece</td>
+        <td class="xl71" x:num>15928</td>
+        <td class="xl70" x:num>352</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Croatia</td>
+        <td class="xl71" x:num>15136</td>
+        <td class="xl70" x:num>255</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Senegal</td>
+        <td class="xl71" x:num>14759</td>
+        <td class="xl70" x:num>302</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Zambia</td>
+        <td class="xl71" x:num>14389</td>
+        <td class="xl70" x:num>331</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Sudan</td>
+        <td class="xl71" x:num>13578</td>
+        <td class="xl70" x:num>836</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Norway</td>
+        <td class="xl71" x:num>13075</td>
+        <td class="xl70" x:num>267</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Albania</td>
+        <td class="xl71" x:num>12666</td>
+        <td class="xl70" x:num>367</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Tunisia</td>
+        <td class="xl71" x:num>11260</td>
+        <td class="xl70" x:num>164</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Namibia</td>
+        <td class="xl71" x:num>10607</td>
+        <td class="xl70" x:num>116</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Congo (DRC)</td>
+        <td class="xl71" x:num>10523</td>
+        <td class="xl70" x:num>271</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Guinea</td>
+        <td class="xl71" x:num>10387</td>
+        <td class="xl70" x:num>65</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Malaysia</td>
+        <td class="xl71" x:num>10358</td>
+        <td class="xl70" x:num>130</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Maldives</td>
+        <td class="xl71" x:num>9818</td>
+        <td class="xl70" x:num>34</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>French Guiana</td>
+        <td class="xl71" x:num>9692</td>
+        <td class="xl70" x:num>65</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Tajikistan</td>
+        <td class="xl71" x:num>9432</td>
+        <td class="xl70" x:num>73</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Finland</td>
+        <td class="xl71" x:num>9195</td>
+        <td class="xl70" x:num>341</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Montenegro</td>
+        <td class="xl71" x:num>8842</td>
+        <td class="xl70" x:num>138</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Gabon</td>
+        <td class="xl71" x:num>8704</td>
+        <td class="xl70" x:num>54</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Haiti</td>
+        <td class="xl71" x:num>8633</td>
+        <td class="xl70" x:num>223</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Luxembourg</td>
+        <td class="xl71" x:num>8016</td>
+        <td class="xl70" x:num>124</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Zimbabwe</td>
+        <td class="xl71" x:num>7711</td>
+        <td class="xl70" x:num>226</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mauritania</td>
+        <td class="xl71" x:num>7403</td>
+        <td class="xl70" x:num>161</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mozambique</td>
+        <td class="xl71" x:num>7114</td>
+        <td class="xl70" x:num>45</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Slovakia</td>
+        <td class="xl71" x:num>6931</td>
+        <td class="xl70" x:num>40</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Myanmar</td>
+        <td class="xl71" x:num>6743</td>
+        <td class="xl70" x:num>115</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Uganda</td>
+        <td class="xl71" x:num>6712</td>
+        <td class="xl70" x:num>64</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Malawi</td>
+        <td class="xl71" x:num>5739</td>
+        <td class="xl70" x:num>179</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Jordan</td>
+        <td class="xl71" x:num>5679</td>
+        <td class="xl70" x:num>33</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Djibouti</td>
+        <td class="xl71" x:num>5407</td>
+        <td class="xl70" x:num>61</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cape Verde</td>
+        <td class="xl71" x:num>5337</td>
+        <td class="xl70" x:num>52</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Swaziland</td>
+        <td class="xl71" x:num>5307</td>
+        <td class="xl70" x:num>106</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Jamaica</td>
+        <td class="xl71" x:num>5270</td>
+        <td class="xl70" x:num>75</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cuba</td>
+        <td class="xl71" x:num>5222</td>
+        <td class="xl70" x:num>117</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Equatorial Guinea</td>
+        <td class="xl71" x:num>5018</td>
+        <td class="xl70" x:num>83</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Republic of Congo</td>
+        <td class="xl71" x:num>5002</td>
+        <td class="xl70" x:num>89</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Nicaragua</td>
+        <td class="xl71" x:num>4961</td>
+        <td class="xl70" x:num>147</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Central African Republic</td>
+        <td class="xl71" x:num>4786</td>
+        <td class="xl70" x:num>62</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Suriname</td>
+        <td class="xl71" x:num>4740</td>
+        <td class="xl70" x:num>97</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Rwanda</td>
+        <td class="xl71" x:num>4738</td>
+        <td class="xl70" x:num>27</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Slovenia</td>
+        <td class="xl71" x:num>4558</td>
+        <td class="xl70" x:num>142</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Angola</td>
+        <td class="xl71" x:num>4236</td>
+        <td class="xl70" x:num>155</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Trinidad and Tobago</td>
+        <td class="xl71" x:num>3974</td>
+        <td class="xl70" x:num>65</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Georgia</td>
+        <td class="xl71" x:num>3913</td>
+        <td class="xl70" x:num>23</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Syria</td>
+        <td class="xl71" x:num>3877</td>
+        <td class="xl70" x:num>178</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Lithuania</td>
+        <td class="xl71" x:num>3859</td>
+        <td class="xl70" x:num>87</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Aruba</td>
+        <td class="xl71" x:num>3551</td>
+        <td class="xl70" x:num>23</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Gambia</td>
+        <td class="xl71" x:num>3540</td>
+        <td class="xl70" x:num>110</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Thailand</td>
+        <td class="xl71" x:num>3511</td>
+        <td class="xl70" x:num>59</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Somalia</td>
+        <td class="xl71" x:num>3465</td>
+        <td class="xl70" x:num>98</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bahamas</td>
+        <td class="xl71" x:num>3418</td>
+        <td class="xl70" x:num>75</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Sri Lanka</td>
+        <td class="xl71" x:num>3312</td>
+        <td class="xl70" x:num>13</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mali</td>
+        <td class="xl71" x:num>3030</td>
+        <td class="xl70" x:num>129</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Estonia</td>
+        <td class="xl71" x:num>2976</td>
+        <td class="xl70" x:num>64</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Malta</td>
+        <td class="xl71" x:num>2814</td>
+        <td class="xl70" x:num>23</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>South Sudan</td>
+        <td class="xl71" x:num>2660</td>
+        <td class="xl70" x:num>49</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Botswana</td>
+        <td class="xl71" x:num>2567</td>
+        <td class="xl70" x:num>13</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Guyana</td>
+        <td class="xl71" x:num>2437</td>
+        <td class="xl70" x:num>67</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Iceland</td>
+        <td class="xl71" x:num>2419</td>
+        <td class="xl70" x:num>10</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Guinea-Bissau</td>
+        <td class="xl71" x:num>2303</td>
+        <td class="xl70" x:num>39</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Benin</td>
+        <td class="xl71" x:num>2294</td>
+        <td class="xl70" x:num>40</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Sierra Leone</td>
+        <td class="xl71" x:num>2174</td>
+        <td class="xl70" x:num>72</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Yemen</td>
+        <td class="xl71" x:num>2028</td>
+        <td class="xl70" x:num>586</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Uruguay</td>
+        <td class="xl71" x:num>1927</td>
+        <td class="xl70" x:num>46</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Burkina Faso</td>
+        <td class="xl71" x:num>1907</td>
+        <td class="xl70" x:num>56</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>new Zealand</td>
+        <td class="xl71" x:num>1815</td>
+        <td class="xl70" x:num>25</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Togo</td>
+        <td class="xl71" x:num>1683</td>
+        <td class="xl70" x:num>41</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Andorra</td>
+        <td class="xl71" x:num>1681</td>
+        <td class="xl70" x:num>53</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Belize</td>
+        <td class="xl71" x:num>1635</td>
+        <td class="xl70" x:num>21</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cyprus</td>
+        <td class="xl71" x:num>1618</td>
+        <td class="xl70" x:num>22</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Latvia</td>
+        <td class="xl71" x:num>1560</td>
+        <td class="xl70" x:num>36</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Lesotho</td>
+        <td class="xl71" x:num>1424</td>
+        <td class="xl70" x:num>33</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Liberia</td>
+        <td class="xl71" x:num>1336</td>
+        <td class="xl70" x:num>82</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Niger</td>
+        <td class="xl71" x:num>1193</td>
+        <td class="xl70" x:num>69</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Chad</td>
+        <td class="xl71" x:num>1155</td>
+        <td class="xl70" x:num>81</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Vietnam</td>
+        <td class="xl71" x:num>1068</td>
+        <td class="xl70" x:num>35</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Sao Tome and Principe</td>
+        <td class="xl71" x:num>908</td>
+        <td class="xl70" x:num>15</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>French Polynesia</td>
+        <td class="xl71" x:num>773</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>San Marino</td>
+        <td class="xl71" x:num>723</td>
+        <td class="xl70" x:num>42</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Diamond Princess</td>
+        <td class="xl71" x:num>712</td>
+        <td class="xl70" x:num>13</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Turks and Caicos Islands</td>
+        <td class="xl71" x:num>668</td>
+        <td class="xl70" x:num>5</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Ruby Princess</td>
+        <td class="xl71" x:num>620</td>
+        <td class="xl70" x:num>10</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Papua New Guinea</td>
+        <td class="xl71" x:num>517</td>
+        <td class="xl70" x:num>7</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Tanzania</td>
+        <td class="xl71" x:num>509</td>
+        <td class="xl70" x:num>21</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Burundi</td>
+        <td class="xl71" x:num>474</td>
+        <td class="xl70" x:num>1</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Comoros</td>
+        <td class="xl71" x:num>470</td>
+        <td class="xl70" x:num>7</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mauritius</td>
+        <td class="xl71" x:num>367</td>
+        <td class="xl70" x:num>10</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Eritrea</td>
+        <td class="xl71" x:num>364</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Gibraltar</td>
+        <td class="xl71" x:num>315</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Mongolia</td>
+        <td class="xl71" x:num>313</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Cambodia</td>
+        <td class="xl71" x:num>275</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bhutan</td>
+        <td class="xl71" x:num>261</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Monaco</td>
+        <td class="xl71" x:num>197</td>
+        <td class="xl70" x:num>1</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Barbados</td>
+        <td class="xl71" x:num>189</td>
+        <td class="xl70" x:num>7</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Faroe Islands</td>
+        <td class="xl71" x:num>184</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Brunei</td>
+        <td class="xl71" x:num>145</td>
+        <td class="xl70" x:num>3</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Seychelles</td>
+        <td class="xl71" x:num>143</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Atsushi Retsushi</td>
+        <td class="xl71" x:num>107</td>
+        <td class="xl70" x:num>2</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Antigua and Barbuda</td>
+        <td class="xl71" x:num>96</td>
+        <td class="xl70" x:num>3</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Martinique</td>
+        <td class="xl71" x:num>66</td>
+        <td class="xl70" x:num>1</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Saint Vincent</td>
+        <td class="xl71" x:num>64</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Fiji</td>
+        <td class="xl71" x:num>32</td>
+        <td class="xl70" x:num>2</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>East Timor</td>
+        <td class="xl71" x:num>27</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Saint Lucia</td>
+        <td class="xl71" x:num>27</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>New Caledonia</td>
+        <td class="xl71" x:num>26</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Dominica</td>
+        <td class="xl71" x:num>24</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Grenada</td>
+        <td class="xl71" x:num>24</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Laos</td>
+        <td class="xl71" x:num>23</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Saint Kitts and Nevis</td>
+        <td class="xl71" x:num>19</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Vatican</td>
+        <td class="xl71" x:num>12</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Greenland</td>
+        <td class="xl71" x:num>11</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Montserrat</td>
+        <td class="xl71" x:num>11</td>
+        <td class="xl70" x:num>1</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Western Sahara</td>
+        <td class="xl71" x:num>10</td>
+        <td class="xl70" x:num>1</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Bermuda</td>
+        <td class="xl71" x:num>7</td>
+        <td class="xl70" x:num>0</td>
+       </tr>
+       <tr height="21" style='height:15.75pt;'>
+        <td class="xl69" height="21" style='height:15.75pt;' x:str>Anguilla</td>
+        <td class="xl71" x:num>3</td>
+        <td class="xl70" x:num>0</td>
+</table>
+<!-- </div> -->
+<br><p></p>
+<br><p></p>
+<br><p></p>
+</body>
+
+<footer id = "footer">
+<footerleft id = "footer-left">
+@ 2020
+<br> VICOVID19 Data
+<br> COVID-19 Trend
+<br> Background Image Source: 
+<br> <a style = color:#faf4ac href = "https://www.dydao.com/87939.html">https://www.dydao.com/87939.html</a>
+</footerleft>
+<footerright id = "footer-right">
+Team: 
+<br> Ramon Aguila s3840883
+<br> Yuxiang Bai s3776877
+<br> Qiwen Dun s3789330
+<br> Matthew Howatson s3835344
+<br> Huiyu Wang s3737937
+<br> Lunke Zhu s3816935
+</footerright>
+</footer>
+</main>
+
+</html>
