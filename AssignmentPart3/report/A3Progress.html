@@ -356,7 +356,24 @@
                     </li>
                 </ul>
             </section>
-
+                <h2 id="h2">EVF3 Testing Facility Locations</h2>
+                <h3 id="h3">Description</h3>
+                <p>
+                    This part is an additional feature of the interactive map, allowing users to find the location of the covid-19 test in Victoria. Regarding location and working hours data, we grabbed them from the official Victoria website. Regarding the production method, first download the data to the local directory, then use Microsoft excel to organize and export the csv format, then use a third-party software ( batchgeo) to generate a map, and finally embed the generated map link into mvf1. When the user uses this function, if the user wants to find the test location closest to them, they only need to find the test location closest to them through the map, and then click the mark in the map. After that, detailed information about the place, such as address and business hours, will be displayed above the marker on the map.
+                </p>
+                <h3 id="h3">User Stories</h3>
+                <ul>
+                    <li>
+                        As a person who feels unwell, I want to find the nearest test location to test, so I can open the map to find the nearest hospital and business hours
+                    </li>
+                    <li>
+                        As a tourist, I need to get a nucleic acid test report to go abroad, so I can open the map to find the nearest hospital and business hours
+                    </li>
+                </ul>
+                <h3 id="h3">Validation Testing</h3>
+                <p>
+                    The verification method of the map is: whether the map can be opened and run normally, whether it can be viewed according to the information, whether it is possible to switch the display data and display the type by color, so that if an error occurs, the verification fails. 
+                </p>
             <hr>
 
             <section>
