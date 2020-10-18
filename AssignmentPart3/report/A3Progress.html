@@ -208,8 +208,8 @@
                 </ul>
                 Link to UI demo: <a
                     href="https://alpha-zett.github.io/AssignmentPart3/website/Map.html">https://alpha-zett.github.io/AssignmentPart3/website/Map.html</a>
-                    <a href="assets/Documents/Interactive Map Validation Testing.pdf">MVF1 Validation Testing</a>
-                    <a href="assets/Documents/Testing Facilities Validation Testing.pdf">EVF3 Validation Testing</a>
+                <a href="assets/Documents/Interactive Map Validation Testing.pdf">MVF1 Validation Testing</a>
+                <a href="assets/Documents/Testing Facilities Validation Testing.pdf">EVF3 Validation Testing</a>
                 <br><img src="assets/mvf1flow.png">
                 <br>
                 <ref id="reference">
@@ -245,6 +245,17 @@
                 <ref id="reference">
                     [My SQL]
                 </ref>
+                <h2 id="h2">MVF2</h2>
+                The Contact Tracing can show the user the risk levels of people around so that the user knows what kind
+                of people he/she is in close contact with. Red means high risk/confirmed case, yellow means maybe in
+                risk of infection, and green means safe and healthy. However, we originally planned to make a
+                login/register feature which would make more sense as all the other people shown on the map are users,
+                and the users fill out information to let the system decide their risk levels, but we weren't able to
+                implement this in the given time frame.
+                <img src="assets/MVF2flow.png">
+                <ref id="reference">
+                    [MVF2 Original Flowchart]
+                </ref>
                 <section>
                     <h2 id="h2">MVF3</h2>
                     The Chatbot is an interactive interface that answers frequently asked questions about COVID-19 in
@@ -271,7 +282,7 @@
                 <section>
                     <h2 id="h2">MVF4</h2>
                     The Trend Forecast will be able to demonstrate the predictions of first and second waves of the
-                    outbreak in Victoria based on user inputs. The original plan was to allow users to choose a location
+                    outbreak in Victoria based on user inputs. The output will be the number of new cases after the prediction with a brief reason why. The original plan was to allow users to choose a location
                     (city in Australia), a date with more than two restrictions. However, it was found out that there
                     would be way too many possible outcomes and it was impossible to come up with a way to calculate
                     every single one of them in the given time frame. So, in order to simplify the feature, I have
@@ -279,6 +290,14 @@
                     outbreak to choose from (first wave was in March and second is in July). The restrictions were
                     reduced to two and the number of days after the restrictions take place was changed from 2-365 days
                     to 2 weeks, 1 month or 2 months.
+                    <img src="assets/mvf4.png">
+                    <ref id="reference">
+                        [MVF4]
+                    </ref>
+                    <img src="assets/MVF4flow.png">
+                    <ref id="reference">
+                        [MVF4 Original Flowchart]
+                    </ref>
                 </section>
 
                 <section>
@@ -437,12 +456,6 @@
                             so I can know if the disease is still serious.<br>
                         </li>
                     </ul>
-                    <h3 id="h3">Validation Testing</h3>
-                <p>
-                    In order to verify this feature, we will update the daily data to test whether it is reliable. 
-                    Also, we will continue to study this feature to reach the point where it can be automatically updated based on the database. 
-                    All information needs to be displayed on the web page.
-                </p>
                 </section>
                 <h2 id="h2">EVF3 Testing Facility Locations</h2>
                 <h3 id="h3">Description</h3>
